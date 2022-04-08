@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="canonical" href="https://github.com/jawaharlau/pmadocumentation/period/">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Period - PMA prototype documentation</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Period", url: "#_top", children: [
+          ]},
+          {title: "Period Names and Classifications", url: "#period-names-and-classifications", children: [
+              {title: "- Period Names and Classifications Ontology Graph", url: "#-period-names-and-classifications-ontology-graph" },
+              {title: "- Period Names and Classifications RDF", url: "#-period-names-and-classifications-rdf" },
+              {title: "- Period Names and Classifications JSON-LD", url: "#-period-names-and-classifications-json-ld" },
+          ]},
+          {title: "Period Existence", url: "#period-existence", children: [
+              {title: "- Period Existence Ontology Graph", url: "#-period-existence-ontology-graph" },
+              {title: "- Period Existence RDF", url: "#-period-existence-rdf" },
+              {title: "- Period Existence JSON-LD", url: "#-period-existence-json-ld" },
+          ]},
+          {title: "Period Documentation", url: "#period-documentation", children: [
+              {title: "- Period Documentation Ontology Graph", url: "#-period-documentation-ontology-graph" },
+              {title: "- Period Documentation RDF", url: "#-period-documentation-rdf" },
+              {title: "- Period Documentation JSON-LD", url: "#-period-documentation-json-ld" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../place/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../place/" class="btn btn-xs btn-link">
+        Place
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../events/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../events/" class="btn btn-xs btn-link">
+        Event
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h2 id="period"><strong>Period</strong></h2>
+<p><strong>Author:</strong> Denitsa Nenova, George Bruseker</p>
+<p><strong>Version:</strong> 1.0</p>
+<p>The <em>Period</em> model is intended to enable the documentation and correct referencing of historical periods for use in datation. Typical instances of <em>Period</em> include period divisions of major epochs, as well as well known century divisions for periods of art history. Period is used primarily as a reference model.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+<th>URI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root Ontology Node</td>
+<td>E4 Period</td>
+<td>https://cidoc-crm.org/Entity/E4-Period/version-7.1.1</td>
+</tr>
+<tr>
+<td>Type Differentiator</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Model Sections Description</strong></p>
+<table>
+<thead>
+<tr>
+<th>Information Category</th>
+<th>Information Collections</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Names and Classifications</td>
+<td>Names/Alternative Names/Identifiers/Type</td>
+<td>The researcher can document various names and classification regarding the <em>Period</em> .</td>
+</tr>
+<tr>
+<td>Existence</td>
+<td>Existence</td>
+<td>The researcher can document various free text descriptions of the <em>Period</em> .</td>
+</tr>
+<tr>
+<td>Documentation</td>
+<td>Digital Object</td>
+<td>The researcher can document citations relative to the period, link to images related to period and document external URIs of documentation for the same <em>Period</em> .</td>
+</tr>
+</tbody>
+</table>
+<h2 id="period-names-and-classifications">Period <strong>Names and Classifications</strong></h2>
+<p>The attribution of names and types to <em>Period</em> is a basic human activity. A chief factor in disambiguating which <em>Period</em> is referred to in historical texts is understanding the various names and identifiers that have been given to a <em>Period</em> at different moments. Likewise, additional classifiers of the <em>Period</em> help in the disambiguation, in an information system, of the reference to one <em>Period</em> from another.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.6</td>
+<td>Period Name</td>
+<td>This field is used to record the string value of the name attributed to the documented <em>Period</em> .</td>
+<td>String</td>
+<td>-&gt;p1-&gt;E33_E41[4_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.11</td>
+<td>Period Type</td>
+<td>This field is used to record the formal type of the documented <em>Period</em> .</td>
+<td>Concept</td>
+<td>-&gt;p2-&gt;E55[11_1]</td>
+</tr>
+<tr>
+<td>LAF.10</td>
+<td>Period ID</td>
+<td>This field is used to record an identifier attributed to the documented <em>Period</em> .</td>
+<td>String</td>
+<td>-&gt;p1-&gt;E42[8_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.9</td>
+<td>ID Type</td>
+<td>This field is used to record the type of the identifier attributed to the documented <em>Period</em> .</td>
+<td>Concept</td>
+<td>-&gt;p1-&gt;E42[8_1]-&gt;p2-&gt;E55[9_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-period-names-and-classifications-ontology-graph">- Period Names and Classifications <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/nc_period.png" /></p>
+<h3 id="-period-names-and-classifications-rdf">- Period Names and Classifications <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://pma.us/models/period/E4&gt; a crm:E4_Period ;
+    crm:P1_is_identified_by &lt;https://linked.art/example/conceptual_object/4_1&gt;,
+        &lt;https://linked.art/example/conceptual_object/8_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/11_1&gt; .
+
+&lt;https://linked.art/example/conceptual_object/4_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content &quot;Name_string_value&quot; .
+
+&lt;https://linked.art/example/conceptual_object/8_1&gt; a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content &quot;Identifier_value_content&quot; ;
+    crm:P2_has_type &lt;https://linked.art/example/identifier/9_1&gt; .
+
+&lt;https://linked.art/example/identifier/9_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/11_1&gt; a crm:E55_Type .
+
+
+
+</code></pre>
+<h3 id="-period-names-and-classifications-json-ld">- Period Names and Classifications <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/identifier/9_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/identifier/9_1&quot;
+      ],
+      &quot;content&quot;: &quot;Identifier_value_content&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/8_1&quot;,
+      &quot;type&quot;: &quot;Identifier&quot;
+    },
+    {
+      &quot;content&quot;: &quot;Name_string_value&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/4_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/11_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/11_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://pma.us/models/period/E4&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/4_1&quot;,
+        &quot;https://linked.art/example/conceptual_object/8_1&quot;
+      ],
+      &quot;type&quot;: &quot;Period&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="period-existence">Period <strong>Existence</strong></h2>
+<p>Of essential importance in identifying <em>Periods</em> is their timespan outlining their existence.  </p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.177</td>
+<td>Period Timespan</td>
+<td>This field is used to link the documented temporal periodto an instance of time-span recording the temporal extent of the period.</td>
+<td>Collection [Timespan]</td>
+<td>-&gt;P4-&gt;E52[177_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-period-existence-ontology-graph">- Period Existence <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/ex_period.png" /></p>
+<h3 id="-period-existence-rdf">- Period Existence <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://pma.us/models/period/E4&gt; a crm:E4_Period ;
+    crm:P4_has_time-span &lt;https://linked.art/example/time_span/177_1&gt; .
+
+&lt;https://linked.art/example/time_span/177_1&gt; a crm:E52_Time-Span .
+
+
+
+</code></pre>
+<h3 id="-period-existence-json-ld">- Period Existence <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://pma.us/models/period/E4&quot;,
+      &quot;timespan&quot;: &quot;https://linked.art/example/time_span/177_1&quot;,
+      &quot;type&quot;: &quot;Period&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/time_span/177_1&quot;,
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="period-documentation">Period <strong>Documentation</strong></h2>
+<p>This information category unites referential information about the documented <em>Period</em>, providing contextual data about them.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PMAF.83</td>
+<td>Digital Object</td>
+<td>This field is used to link to an instance of digital resource which serves as a digital reference document for the documented <em>Period</em>.</td>
+<td>Reference Model  [Digital Object]</td>
+<td>-&gt;P02i-&gt;PC67[A83_1]-&gt;P01-&gt;D1[A83_2]</td>
+</tr>
+<tr>
+<td>PMAF.84</td>
+<td>Digital Object Type</td>
+<td>This field is used to link to a type record which indicates the kind of reference supported by the digital resource that serves as a reference for the documented <em>Period</em>.</td>
+<td>Concept</td>
+<td>-&gt;P02i-&gt;PC67[A83_1]-&gt;P67.1-&gt;E55[A84_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-period-documentation-ontology-graph">- Period Documentation <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/doc_period.png" /></p>
+<h3 id="-period-documentation-rdf">- Period Documentation <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://pma.us/models/period/E4&gt; a crm:E4_Period ;
+    crm:P02i_is_range_of &lt;https://linked.art/example/reified_property/A83_1&gt; .
+
+&lt;https://linked.art/example/conceptual_object/A83_2&gt; a crm:D1_Digital_Object .
+
+&lt;https://linked.art/example/conceptual_object/A84_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/reified_property/A83_1&gt; a crm:PC67_refers_to ;
+    crm:P01_has_domain &lt;https://linked.art/example/conceptual_object/A83_2&gt; ;
+    crm:P67.1_has_type &lt;https://linked.art/example/conceptual_object/A84_1&gt; .
+
+
+
+</code></pre>
+<h3 id="-period-documentation-json-ld">- Period Documentation <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/A84_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;crm:P02i_is_range_of&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/reified_property/A83_1&quot;
+      },
+      &quot;id&quot;: &quot;https://pma.us/models/period/E4&quot;,
+      &quot;type&quot;: &quot;Period&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/A83_2&quot;,
+      &quot;type&quot;: &quot;crm:D1_Digital_Object&quot;
+    },
+    {
+      &quot;crm:P01_has_domain&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/A83_2&quot;
+      },
+      &quot;crm:P67.1_has_type&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/A84_1&quot;
+      },
+      &quot;id&quot;: &quot;https://linked.art/example/reified_property/A83_1&quot;,
+      &quot;type&quot;: &quot;crm:PC67_refers_to&quot;
+    }
+  ]
+}
+
+</code></pre>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../place/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../place/" class="btn btn-xs btn-link">
+        Place
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../events/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../events/" class="btn btn-xs btn-link">
+        Event
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="canonical" href="https://github.com/jawaharlau/pmadocumentation/group/">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Group - PMA prototype documentation</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Group", url: "#_top", children: [
+          ]},
+          {title: "Group Names and Classifications", url: "#group-names-and-classifications", children: [
+              {title: "- Group Names and Classifications Ontology Graph", url: "#-group-names-and-classifications-ontology-graph" },
+              {title: "- Group Names and Classifications RDF", url: "#-group-names-and-classifications-rdf" },
+              {title: "- Group Names and Classifications JSON-LD", url: "#-group-names-and-classifications-json-ld" },
+          ]},
+          {title: "Group Parthood", url: "#group-parthood", children: [
+              {title: "- Group Parthood Ontology Graph", url: "#-group-parthood-ontology-graph" },
+              {title: "- Group Parthood RDF", url: "#-group-parthood-rdf" },
+              {title: "- Group Parthood JSON-LD", url: "#-group-parthood-json-ld" },
+          ]},
+          {title: "Group Existence", url: "#group-existence", children: [
+              {title: "- Group Existence Ontology Graph", url: "#-group-existence-ontology-graph" },
+              {title: "- Group Existence RDF", url: "#-group-existence-rdf" },
+              {title: "- Group Existence JSON-LD", url: "#-group-existence-json-ld" },
+          ]},
+          {title: "Group Activities", url: "#group-activities", children: [
+              {title: "- Group Activities Ontology Graph", url: "#-group-activities-ontology-graph" },
+              {title: "- Group Activities RDF", url: "#-group-activities-rdf" },
+          ]},
+          {title: "Group Location", url: "#group-location", children: [
+              {title: "- Group Location Ontology Graph", url: "#-group-location-ontology-graph" },
+              {title: "- Group Location RDF", url: "#-group-location-rdf" },
+              {title: "- Group Location JSON-LD", url: "#-group-location-json-ld" },
+          ]},
+          {title: "Group Documentation", url: "#group-documentation", children: [
+              {title: "- Group Documentation Ontology Graph", url: "#-group-documentation-ontology-graph" },
+              {title: "- Group Documentation RDF", url: "#-group-documentation-rdf" },
+              {title: "- Group Documentation JSON-LD", url: "#-group-documentation-json-ld" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../exhibitions/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../exhibitions/" class="btn btn-xs btn-link">
+        Exhibition
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../person/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../person/" class="btn btn-xs btn-link">
+        Person
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h2 id="group"><strong>Group</strong></h2>
+<p><strong>Author:</strong> Denitsa Nenova, George Bruseker</p>
+<p><strong>Version:</strong> 1.0</p>
+<p>The <em>Group</em> reference data model provides a list of standard descriptors (fields) that are typically present in the description of a <em>Group</em> or institution in cultural heritage data systems. The intention of this reference model is to provide a consolidated, high-level formal structure comprising the most commonly reused descriptors for a <em>Group</em>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+<th>URI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root Ontology Node</td>
+<td>E74 Group</td>
+<td>https://cidoc-crm.org/Entity/E74-Group/version-7.1.1</td>
+</tr>
+<tr>
+<td>Type Differentiator</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Model Sections Description</strong></p>
+<table>
+<thead>
+<tr>
+<th>Information Category</th>
+<th>Information Collections</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Names and Classifications</td>
+<td>Names/Alternative Names/Identifiers/Type</td>
+<td>The researcher can document various names and classification regarding the <em>Group</em>.</td>
+</tr>
+<tr>
+<td>Existence</td>
+<td>Formation</td>
+<td>The researcher can document the events related to the formation of the <em>Group</em>.</td>
+</tr>
+<tr>
+<td>Parthood</td>
+<td>Members</td>
+<td>The researcher can document members of the <em>Group</em>.</td>
+</tr>
+<tr>
+<td>Activities</td>
+<td>Professional Activities</td>
+<td>The researcher can document information about the the professional activities of the <em>Group</em>.</td>
+</tr>
+<tr>
+<td>Location</td>
+<td>Contact Details</td>
+<td>The researcher can document relevant addresses and other contact information associated with the <em>Group</em>.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Description</td>
+<td>The researcher can document various free-text descriptions of the <em>Group</em>.</td>
+</tr>
+<tr>
+<td>Documentation</td>
+<td>Digital Resource</td>
+<td>The researcher can document various weblinks and images related to the <em>Group</em>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="group-names-and-classifications">Group <strong>Names and Classifications</strong></h2>
+<p>The attribution of names and types to things, including <em>Groups</em>, is a basic human activity. The disambiguation of <em>Groups</em> is aided by the understanding of the various names and identifiers that have been given to a <em>Group</em> at different moments in time. Moreover, classifications such as <em>Group</em> type and legal status can help in identifying and studying <em>Groups</em> over time.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.6</td>
+<td>Organization Name</td>
+<td>This field is used to record the string value of the name attributed to the documented <em>Group</em>.</td>
+<td>String</td>
+<td>-&gt;p1-&gt;E33_E41[4_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.5</td>
+<td>Name Type</td>
+<td>This field is used to record the type of the name attributed to the documented <em>Group</em>.</td>
+<td>Concept</td>
+<td>-&gt;p1-&gt;E33_41[4_1]-&gt;p2-&gt;E55[5_1]</td>
+</tr>
+<tr>
+<td>LAF.7</td>
+<td>Name Language</td>
+<td>This field is used to record the language of the name attributed to the documented <em>Group</em>.</td>
+<td>Concept</td>
+<td>-&gt;p1-&gt;E33_E41[4_1]-&gt;p72-&gt;E56[7_1]</td>
+</tr>
+<tr>
+<td>LAF.9</td>
+<td>Organization ID Type</td>
+<td>This field is used to record the type of the identifier attributed to the documented <em>Group</em>.</td>
+<td>Concept</td>
+<td>-&gt;p1-&gt;E42[8_1]-&gt;p2-&gt;E55[9_1]</td>
+</tr>
+<tr>
+<td>LAF.10</td>
+<td>Organization ID</td>
+<td>This field is used to record an identifier attributed to the documented <em>Group</em>.</td>
+<td>String</td>
+<td>-&gt;p1-&gt;E42[8_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.11</td>
+<td>Organization Type</td>
+<td>This field is used to record the formal type of the documented <em>Group</em>.</td>
+<td>Concept</td>
+<td>-&gt;p2-&gt;E55[11_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-group-names-and-classifications-ontology-graph">- Group Names and Classifications <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/nc_group.png" /></p>
+<h3 id="-group-names-and-classifications-rdf">- Group Names and Classifications <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://pma.us/models/group/E74&gt; a crm:E74_Group ;
+    crm:P1_is_identified_by &lt;https://linked.art/example/conceptual_object/4_1&gt;,
+        &lt;https://linked.art/example/conceptual_object/8_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/11_1&gt; .
+
+&lt;http://vocab.getty.edu/page/aat/300404670&gt; a crm:E55_Type ;
+    rdfs:label &quot;preferred terms&quot; .
+
+&lt;https://linked.art/example/conceptual_object/4_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content &quot;Name_string_value&quot; ;
+    crm:P2_has_type &lt;http://vocab.getty.edu/page/aat/300404670&gt; ;
+    crm:P72_has_language &lt;https://linked.art/example/type/7_1&gt; .
+
+&lt;https://linked.art/example/conceptual_object/8_1&gt; a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content &quot;Identifier_value_content&quot; ;
+    crm:P2_has_type &lt;https://linked.art/example/identifier/9_1&gt; .
+
+&lt;https://linked.art/example/identifier/9_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/11_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/7_1&gt; a crm:E56_Language .
+
+
+
+</code></pre>
+<h3 id="-group-names-and-classifications-json-ld">- Group Names and Classifications <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/identifier/9_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;preferred terms&quot;,
+      &quot;id&quot;: &quot;http://vocab.getty.edu/page/aat/300404670&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/identifier/9_1&quot;
+      ],
+      &quot;content&quot;: &quot;Identifier_value_content&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/8_1&quot;,
+      &quot;type&quot;: &quot;Identifier&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;http://vocab.getty.edu/page/aat/300404670&quot;
+      ],
+      &quot;content&quot;: &quot;Name_string_value&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/4_1&quot;,
+      &quot;language&quot;: [
+        &quot;https://linked.art/example/type/7_1&quot;
+      ],
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/11_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/11_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://pma.us/models/group/E74&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/4_1&quot;,
+        &quot;https://linked.art/example/conceptual_object/8_1&quot;
+      ],
+      &quot;type&quot;: &quot;Group&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/7_1&quot;,
+      &quot;type&quot;: &quot;Language&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="group-parthood">Group <strong>Parthood</strong></h2>
+<p><em>Groups</em> often exist in complex internal structuration with relations of subsumption towards sub-parts of the <em>Group</em>. This information category gathers together the basic descriptors typically deployed to this end.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.18</td>
+<td>Members</td>
+<td>This field is used to link the documented <em>Group</em> to an instance of person or <em>Group</em> which is a member of it.</td>
+<td>Reference Model  [Person]</td>
+<td>-&gt;p107-&gt;E21[18_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-group-parthood-ontology-graph">- Group Parthood <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/part_group.png" /></p>
+<h3 id="-group-parthood-rdf">- Group Parthood <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://pma.us/models/group/E74&gt; a crm:E74_Group ;
+    crm:P107_has_current_or_former_member &lt;https://linked.art/example/actor/18_1&gt; .
+
+&lt;https://linked.art/example/actor/18_1&gt; a crm:E39_Actor .
+
+
+
+
+</code></pre>
+<h3 id="-group-parthood-json-ld">- Group Parthood <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;crm:P107_has_current_or_former_member&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/actor/18_1&quot;
+      },
+      &quot;id&quot;: &quot;https://pma.us/models/group/E74&quot;,
+      &quot;type&quot;: &quot;Group&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/18_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="group-existence">Group <strong>Existence</strong></h2>
+<p>Of essential importance in identifying and tracking <em>Groups</em> is to know when they came into existence as such. For this reason, we have clustered descriptors relevant to such information into a common ‘existence’ category tracking the formation of a <em>Group</em>. These are described in the table below.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.142</td>
+<td>Organization Formed By</td>
+<td>This field is used to link the documented group formation activity to an actor responsible for carrying it out.</td>
+<td>Reference Model  [Person/Group]</td>
+<td>-&gt;P95i-&gt;E66[139_1]-&gt;P14-&gt;E39[142_1]</td>
+</tr>
+<tr>
+<td>LAF.139</td>
+<td>Formation Place</td>
+<td>This field is used to link the documented group formation activity to a location at which it was carried out.</td>
+<td>Reference Model [Place]</td>
+<td>-&gt;P95i-&gt;E66[139_1]-&gt;P7-&gt;E53[139_2]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-group-existence-ontology-graph">- Group Existence <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/ex_group.png" /></p>
+<h3 id="-group-existence-rdf">- Group Existence <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://pma.us/models/group/E74&gt; a crm:E74_Group ;
+    crm:P95i_was_formed_by &lt;https://linked.art/example/event/139_1&gt; .
+
+&lt;https://linked.art/example/actor/142_1&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/event/139_1&gt; a crm:E66_Formation ;
+    crm:P14_carried_out_by &lt;https://linked.art/example/actor/142_1&gt; ;
+    crm:P7_took_place_at &lt;https://linked.art/example/place/139_2&gt; .
+
+&lt;https://linked.art/example/place/139_2&gt; a crm:E53_Place .
+
+
+
+</code></pre>
+<h3 id="-group-existence-json-ld">- Group Existence <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;formed_by&quot;: &quot;https://linked.art/example/event/139_1&quot;,
+      &quot;id&quot;: &quot;https://pma.us/models/group/E74&quot;,
+      &quot;type&quot;: &quot;Group&quot;
+    },
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://linked.art/example/actor/142_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/event/139_1&quot;,
+      &quot;took_place_at&quot;: [
+        &quot;https://linked.art/example/place/139_2&quot;
+      ],
+      &quot;type&quot;: &quot;Formation&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/place/139_2&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/142_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="group-activities">Group <strong>Activities</strong></h2>
+<p>This category brings together documentary evidence with regards to the main professional activities subject to the documented <em>Group</em>. </p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.134</td>
+<td>Main Activity</td>
+<td>This field is used to record the formal type of the documented <em>Group</em>'s professional activity.</td>
+<td>Concept</td>
+<td>-&gt;P14i-&gt;E7[126_1]-&gt;P2-&gt;E55[134_1]</td>
+</tr>
+<tr>
+<td>LAF.126</td>
+<td>Current Location</td>
+<td>This field is used to link the documented <em>Group</em>'s professional activity to a location at which it was carried out.</td>
+<td>Reference Model  [Place]</td>
+<td>-&gt;P14i-&gt;E7[126_1]-&gt;P7-&gt;E53[126_2]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-group-activities-ontology-graph">- Group Activities <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/act_group.png" /></p>
+<h3 id="-group-activities-rdf">- Group Activities <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://pma.us/models/group/E74&gt; a crm:E74_Group ;
+    crm:P14i_performed &lt;https://linked.art/example/event/126_1&gt; .
+
+&lt;https://linked.art/example/event/126_1&gt; a crm:E7_Activity ;
+    crm:P2_has_type &lt;https://linked.art/example/type/134_1&gt; ;
+    crm:P7_took_place_at &lt;https://linked.art/example/place/126_2&gt; .
+
+&lt;https://linked.art/example/place/126_2&gt; a crm:E53_Place .
+
+&lt;https://linked.art/example/type/134_1&gt; a crm:E55_Type .
+</code></pre>
+<p>### - Group Activities <strong>JSON-LD</strong></p>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/place/126_2&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;carried_out&quot;: [
+        &quot;https://linked.art/example/event/126_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://pma.us/models/group/E74&quot;,
+      &quot;type&quot;: &quot;Group&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/134_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/event/126_1&quot;,
+      &quot;took_place_at&quot;: [
+        &quot;https://linked.art/example/place/126_2&quot;
+      ],
+      &quot;type&quot;: &quot;Activity&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/134_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="group-location">Group <strong>Location</strong></h2>
+<p>The documentation of location aids in understanding where a <em>Group</em> is seated as well as in understanding how they are dispersed geographically. This information category gathers together relevant descriptors for this task.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.172</td>
+<td>Current Address</td>
+<td>This field is used to link the documented <em>Group</em> to a place at which they have been resident.</td>
+<td>Reference Model  [Place]</td>
+<td>-&gt;P74-&gt;E53[172_1]</td>
+</tr>
+<tr>
+<td>LAF.169</td>
+<td>Contact Point Type</td>
+<td>This field is used to record the type of the contact Point attributed to the documented <em>Group</em>.</td>
+<td>Concept</td>
+<td>-&gt;P1-&gt;E42[168_1]-&gt;P2-&gt;E55[169_1]</td>
+</tr>
+<tr>
+<td>LAF.170</td>
+<td>Contact Details</td>
+<td>This field is used to record a contact Point attributed to the documented <em>Group</em>.</td>
+<td>String</td>
+<td>-&gt;P1-&gt;E42[168_1]-&gt;P190-&gt;rdf:literal</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-group-location-ontology-graph">- Group Location <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/loc_group.png" /></p>
+<h3 id="-group-location-rdf">- Group Location <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://pma.us/models/group/E74&gt; a crm:E74_Group ;
+    crm:P1_is_identified_by &lt;https://linked.art/example/conceptual_object/168_1&gt; .
+
+&lt;https://linked.art/example/conceptual_object/168_1&gt; a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content &quot;Identifier_value_content&quot; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/169_1&gt; .
+
+&lt;https://linked.art/example/type/169_1&gt; a crm:E55_Type .
+
+
+
+</code></pre>
+<h3 id="-group-location-json-ld">- Group Location <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://pma.us/models/group/E74&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/168_1&quot;
+      ],
+      &quot;type&quot;: &quot;Group&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/169_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/169_1&quot;
+      ],
+      &quot;content&quot;: &quot;Identifier_value_content&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/168_1&quot;,
+      &quot;type&quot;: &quot;Identifier&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="group-documentation">Group <strong>Documentation</strong></h2>
+<p>This information category unites referential information about the documented <em>Group</em>.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.37</td>
+<td>Weblink</td>
+<td>This field is used to document a URI which is meant to indicate an equivalence between the documented <em>Group</em> and a resolvable, structured reference resource that stands as a document for this self same entity.</td>
+<td>Class</td>
+<td>-&gt;skos:ExactMatch-&gt;E1[37_1]</td>
+</tr>
+<tr>
+<td>LAF.173</td>
+<td>Reference</td>
+<td>This field is used to link the documented <em>Group</em> to an instance of textual work in which it is documented or mentioned.</td>
+<td>Reference Model  [Textual Work]</td>
+<td>-&gt;P67i-&gt;E33[173_1]</td>
+</tr>
+<tr>
+<td>PMAF.83</td>
+<td>Digital Object</td>
+<td>This field is used to link to an instance of digital resource which serves as a digital reference document for the documented <em>Group</em>.</td>
+<td>Reference Model [Digital Object]</td>
+<td>-&gt;P02i-&gt;PC67[A83_1]-&gt;P01-&gt;D1[A83_2]</td>
+</tr>
+<tr>
+<td>PMAF.84</td>
+<td>Digital Object Type</td>
+<td>This field is used to link to a type record which indicates the kind of reference supported by the digital resource that serves as a reference for the documented <em>Group</em>.</td>
+<td>Concept</td>
+<td>-&gt;P02i-&gt;PC67[A83_1]-&gt;P67.1-&gt;E55[A84_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-group-documentation-ontology-graph">- Group Documentation <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/doc_group.png" /></p>
+<h3 id="-group-documentation-rdf">- Group Documentation <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix skos: &lt;http://skos&gt; .
+
+&lt;https://pma.us/models/group/E74&gt; a crm:E74_Group ;
+    skos:ExactMatch &lt;https://linked.art/example/entity/37_1&gt; ;
+    crm:P02i_is_range_of &lt;https://linked.art/example/reified_property/A83_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/conceptual_object/173_1&gt; .
+
+&lt;https://linked.art/example/conceptual_object/173_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/conceptual_object/A83_2&gt; a crm:D1_Digital_Object .
+
+&lt;https://linked.art/example/conceptual_object/A84_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/entity/37_1&gt; a crm:E1_CRM_Entity .
+
+&lt;https://linked.art/example/reified_property/A83_1&gt; a crm:PC67_refers_to ;
+    crm:P01_has_domain &lt;https://linked.art/example/conceptual_object/A83_2&gt; ;
+    crm:P67.1_has_type &lt;https://linked.art/example/conceptual_object/A84_1&gt; .
+
+
+
+</code></pre>
+<h3 id="-group-documentation-json-ld">- Group Documentation <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/A83_2&quot;,
+      &quot;type&quot;: &quot;crm:D1_Digital_Object&quot;
+    },
+    {
+      &quot;crm:P01_has_domain&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/A83_2&quot;
+      },
+      &quot;crm:P67.1_has_type&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/A84_1&quot;
+      },
+      &quot;id&quot;: &quot;https://linked.art/example/reified_property/A83_1&quot;,
+      &quot;type&quot;: &quot;crm:PC67_refers_to&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/A84_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;crm:P02i_is_range_of&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/reified_property/A83_1&quot;
+      },
+      &quot;http://skosExactMatch&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/entity/37_1&quot;
+      },
+      &quot;id&quot;: &quot;https://pma.us/models/group/E74&quot;,
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/173_1&quot;
+      ],
+      &quot;type&quot;: &quot;Group&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/entity/37_1&quot;,
+      &quot;type&quot;: &quot;CRMEntity&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/173_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    }
+  ]
+}
+
+</code></pre>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../exhibitions/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../exhibitions/" class="btn btn-xs btn-link">
+        Exhibition
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../person/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../person/" class="btn btn-xs btn-link">
+        Person
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

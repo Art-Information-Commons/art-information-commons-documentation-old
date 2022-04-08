@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="canonical" href="https://github.com/jawaharlau/pmadocumentation/exhibitions/">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Exhibition - PMA prototype documentation</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Exhibition", url: "#_top", children: [
+          ]},
+          {title: "Exhibition Names and Classifications", url: "#exhibition-names-and-classifications", children: [
+              {title: "- Exhibition Names and Classifications Ontology Graph", url: "#-exhibition-names-and-classifications-ontology-graph" },
+              {title: "- Exhibition Names and Classifications RDF", url: "#-exhibition-names-and-classifications-rdf" },
+              {title: "- Exhibition Names and Classifications JSON-LD", url: "#-exhibition-names-and-classifications-json-ld" },
+          ]},
+          {title: "Exhibition Existence", url: "#exhibition-existence", children: [
+              {title: "- Exhibition Existence Ontology Graph", url: "#-exhibition-existence-ontology-graph" },
+              {title: "- Exhibition Existence RDF", url: "#-exhibition-existence-rdf" },
+              {title: "- Exhibition Existence JSON-LD", url: "#-exhibition-existence-json-ld" },
+          ]},
+          {title: "Exhibition Description", url: "#exhibition-description", children: [
+              {title: "- Exhibition Description Ontology Graph", url: "#-exhibition-description-ontology-graph" },
+              {title: "- Exhibition Description RDF", url: "#-exhibition-description-rdf" },
+              {title: "- Exhibition Description JSON-LD", url: "#-exhibition-description-json-ld" },
+          ]},
+          {title: "Exhibition Documentation", url: "#exhibition-documentation", children: [
+              {title: "- Exhibition Documentation Ontology Graph", url: "#-exhibition-documentation-ontology-graph" },
+              {title: "- Exhibition Documentation RDF", url: "#-exhibition-documentation-rdf" },
+              {title: "- Exhibition Documentation JSON-LD", url: "#-exhibition-documentation-json-ld" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../events/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../events/" class="btn btn-xs btn-link">
+        Event
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../group/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../group/" class="btn btn-xs btn-link">
+        Group
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h2 id="exhibition"><strong>Exhibition</strong></h2>
+<p><strong>Author:</strong> Denitsa Nenova, George Bruseker</p>
+<p><strong>Version:</strong> 1.0</p>
+<p>The <em>Exhibition</em> reference data model provides a list of standard fields that are typically present in the general description of an <em>Exhibition</em>, taken in the sense of planned public or social occasion, organized towards some purpose. The aim of this reference model is to cover basic descriptors that are typically employed in the documentation of an <em>Exhibition</em>. This reference model aims to remain at a general level description, providing a consolidated, high-level reference data model of most commonly reused descriptors for an <em>Exhibition</em> as such and to provide for these, in turn, a set of standard semantic mappings to the CIDOC CRM. </p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+<th>URI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root Ontology Node</td>
+<td>E7 Activity</td>
+<td>https://cidoc-crm.org/Entity/E7-Activity/version-7.1.1</td>
+</tr>
+<tr>
+<td>Type Differentiator</td>
+<td>exhibitions (events)</td>
+<td>http://vocab.getty.edu/aat/300054766</td>
+</tr>
+</tbody>
+</table>
+<p>T<strong>Model Sections Description</strong></p>
+<table>
+<thead>
+<tr>
+<th>Information Category</th>
+<th>Information Collections</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Names and Classifications</td>
+<td>Names/Alternative Names/Identifiers</td>
+<td>The researcher can document various names and classification regarding the <em>Exhibition</em>.</td>
+</tr>
+<tr>
+<td>Existence</td>
+<td>Creation</td>
+<td>The researcher can document the events related to the formation of the <em>Exhibition</em>.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Description</td>
+<td>The researcher can document various free-text descriptions of the <em>Exhibition</em>.</td>
+</tr>
+<tr>
+<td>Documentation</td>
+<td>Digital Resource</td>
+<td>The researcher can document various weblinks and images related to the <em>Exhibition</em>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exhibition-names-and-classifications">Exhibition <strong>Names and Classifications</strong></h2>
+<p>The attribution of names and types to events such as <em>Exhibitions</em>, as with other entities, is a basic human activity. A chief factor in disambiguating <em>Exhibitions</em> lies in understanding the various names and identifiers that have been given to them at different moments in their individual histories. Historical events often receive different names according to the groups naming it. Likewise, additional classifiers of the event, such as how it has been formally categorized, give important distinguishing characteristics.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.6</td>
+<td>Exhibition Name</td>
+<td>This field is used to record the string value of the name attributed to the documented <em>Exhibition</em>.</td>
+<td>String</td>
+<td>-&gt;p1-&gt;E33_E41[4_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.5</td>
+<td>Name Type</td>
+<td>This field is used to record the type of the name attributed to the documented <em>Exhibition</em>.</td>
+<td>Concept</td>
+<td>-&gt;p1-&gt;E33_41[4_1]-&gt;p2-&gt;E55[5_1]</td>
+</tr>
+<tr>
+<td>LAF.7</td>
+<td>Exhibition Name Language</td>
+<td>This field is used to record the language of the name attributed to the documented <em>Exhibition</em>.</td>
+<td>Concept</td>
+<td>-&gt;p1-&gt;E33_E41[4_1]-&gt;p72-&gt;E56[7_1]</td>
+</tr>
+<tr>
+<td>LAF.10</td>
+<td>Exhibition ID</td>
+<td>This field is used to record an identifier attributed to the documented <em>Exhibition</em>.</td>
+<td>String</td>
+<td>-&gt;p1-&gt;E42[8_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.9</td>
+<td>Identifier Type</td>
+<td>This field is used to record the type of the identifier attributed to the documented <em>Exhibition</em>.</td>
+<td>Concept</td>
+<td>-&gt;p1-&gt;E42[8_1]-&gt;p2-&gt;E55[9_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-exhibition-names-and-classifications-ontology-graph">- Exhibition Names and Classifications <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/nc_exhibition.png" /></p>
+<h3 id="-exhibition-names-and-classifications-rdf">- Exhibition Names and Classifications <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://pma.us/models/exhibition_concept/E7&gt; a crm:E7_Activity ;
+    crm:P1_is_identified_by &lt;https://linked.art/example/conceptual_object/4_1&gt;,
+        &lt;https://linked.art/example/conceptual_object/8_1&gt; .
+
+&lt;http://vocab.getty.edu/page/aat/300404670&gt; a crm:E55_Type ;
+    rdfs:label &quot;preferred terms&quot; .
+
+&lt;https://linked.art/example/conceptual_object/4_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content &quot;Name_string_value&quot; ;
+    crm:P2_has_type &lt;http://vocab.getty.edu/page/aat/300404670&gt; ;
+    crm:P72_has_language &lt;https://linked.art/example/type/7_1&gt; .
+
+&lt;https://linked.art/example/conceptual_object/8_1&gt; a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content &quot;Identifier_value_content&quot; ;
+    crm:P2_has_type &lt;https://linked.art/example/identifier/9_1&gt; .
+
+&lt;https://linked.art/example/identifier/9_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/7_1&gt; a crm:E56_Language .
+
+
+
+
+
+
+</code></pre>
+<h3 id="-exhibition-names-and-classifications-json-ld">- Exhibition Names and Classifications <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;_label&quot;: &quot;preferred terms&quot;,
+      &quot;id&quot;: &quot;http://vocab.getty.edu/page/aat/300404670&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/identifier/9_1&quot;
+      ],
+      &quot;content&quot;: &quot;Identifier_value_content&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/8_1&quot;,
+      &quot;type&quot;: &quot;Identifier&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;http://vocab.getty.edu/page/aat/300404670&quot;
+      ],
+      &quot;content&quot;: &quot;Name_string_value&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/4_1&quot;,
+      &quot;language&quot;: [
+        &quot;https://linked.art/example/type/7_1&quot;
+      ],
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/identifier/9_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://pma.us/models/exhibition_concept/E7&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/4_1&quot;,
+        &quot;https://linked.art/example/conceptual_object/8_1&quot;
+      ],
+      &quot;type&quot;: &quot;Activity&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/7_1&quot;,
+      &quot;type&quot;: &quot;Language&quot;
+    }
+  ]
+}
+
+
+</code></pre>
+<h2 id="exhibition-existence">Exhibition <strong>Existence</strong></h2>
+<p>The existence of an <em>Exhibition</em> must be determined by documentary or physical evidence of the past. The documentation of the existence of an <em>Exhibition</em>, however, essentially relates to ascribing that <em>Exhibition</em> dates, where possible, durations otherwise, and a description of the temporality where none of the above is possible. The descriptors and mappings for these potentialities are documented in the table below.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.19</td>
+<td>Exhibition Place</td>
+<td>This field is used to link the documented <em>Exhibition</em> to an instance of place at which it occurred.</td>
+<td>Reference Model  [Place]</td>
+<td>-&gt;p7-&gt;E53[19_1]</td>
+</tr>
+<tr>
+<td>LAF.21</td>
+<td>Department</td>
+<td>This field is used to link the documented <em>Exhibition</em> to an instance of actor who was causally involved in the execution of the <em>Exhibition</em>.</td>
+<td>Reference Model [Person/Group]</td>
+<td>-&gt;p14-&gt;E39[21_1]</td>
+</tr>
+<tr>
+<td>LAF.177</td>
+<td>Exhibition Date</td>
+<td>This field is used to link the documented temporal entity to an instance of time-span recording the temporal extent of the <em>Exhibition</em>.</td>
+<td>Collection [Timespan]</td>
+<td>-&gt;P4-&gt;E52[177_1]</td>
+</tr>
+<tr>
+<td>LAF.11</td>
+<td>Exhibition creation type</td>
+<td>This field is used to record the formal type of the documented <em>Exhibition</em>.</td>
+<td>Concept</td>
+<td>-&gt;p2-&gt;E55[11_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-exhibition-existence-ontology-graph">- Exhibition Existence <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/ex_exhibition.png" /></p>
+<h3 id="-exhibition-existence-rdf">- Exhibition Existence <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://pma.us/models/exhibition_concept/E7&gt; a crm:E7_Activity ;
+    crm:P14_carried_out_by &lt;https://linked.art/example/actor/21_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/11_1&gt; ;
+    crm:P4_has_time-span &lt;https://linked.art/example/time_span/177_1&gt; ;
+    crm:P7_took_place_at &lt;https://linked.art/example/place/19_1&gt; .
+
+&lt;https://linked.art/example/actor/21_1&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/place/19_1&gt; a crm:E53_Place .
+
+&lt;https://linked.art/example/time_span/177_1&gt; a crm:E52_Time-Span .
+
+&lt;https://linked.art/example/type/11_1&gt; a crm:E55_Type .
+
+
+
+
+</code></pre>
+<h3 id="-exhibition-existence-json-ld">- Exhibition Existence <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/11_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/21_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://linked.art/example/actor/21_1&quot;
+      ],
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/11_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://pma.us/models/exhibition_concept/E7&quot;,
+      &quot;timespan&quot;: &quot;https://linked.art/example/time_span/177_1&quot;,
+      &quot;took_place_at&quot;: [
+        &quot;https://linked.art/example/place/19_1&quot;
+      ],
+      &quot;type&quot;: &quot;Activity&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/place/19_1&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/time_span/177_1&quot;,
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="exhibition-description">Exhibition <strong>Description</strong></h2>
+<p><em>Exhibitions</em> are the subjects of innumerable descriptions that provide a wide range of information with regards to what took place during the event and how, as well as providing interpretations of its significance and import. Such descriptions are of use in a scholarly understanding of an <em>Exhibition</em> just in case we are able to track the provenance of such elocutions in a systematic fashion. Such an aim drives the need for the tracking of description information as a separate category. The descriptors necessary for this task are documented in the table below.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.14</td>
+<td>Statement Type</td>
+<td>This field is used to record the formal type of the statement made about the documented <em>Exhibition</em>.</td>
+<td>Concept</td>
+<td>-&gt;p67i-&gt;E33[13_1]-&gt;p2-&gt;E55[14_1]</td>
+</tr>
+<tr>
+<td>LAF.15</td>
+<td>Statement</td>
+<td>This field is used to record the actual textual content of the statement describing the documented <em>Exhibition</em>.</td>
+<td>String</td>
+<td>-&gt;p67i-&gt;E33[13_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.16</td>
+<td>Statement Language</td>
+<td>This field is used to record the language of the statement describing the documented <em>Exhibition</em>.</td>
+<td>Concept</td>
+<td>-&gt;p67i-&gt;E33[13_1]-&gt;p72-&gt;E56[16_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-exhibition-description-ontology-graph">- Exhibition Description <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/desc_exhibition.png" /></p>
+<h3 id="-exhibition-description-rdf">- Exhibition Description <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://pma.us/models/exhibition_concept/E7&gt; a crm:E7_Activity ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/conceptual_object/13_1&gt; .
+
+&lt;http://vocab.getty.edu/aat/300418049&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/conceptual_object/13_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P190_has_symbolic_content &quot;Statement_string_content&quot; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/14_1&gt; ;
+    crm:P72_has_language &lt;https://linked.art/example/type/16_1&gt; .
+
+&lt;https://linked.art/example/type/14_1&gt; a crm:E55_Type ;
+    crm:P2_has_type &lt;http://vocab.getty.edu/aat/300418049&gt; .
+
+&lt;https://linked.art/example/type/16_1&gt; a crm:E56_Language .
+
+
+
+
+</code></pre>
+<h3 id="-exhibition-description-json-ld">- Exhibition Description <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;http://vocab.getty.edu/aat/300418049&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://pma.us/models/exhibition_concept/E7&quot;,
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/13_1&quot;
+      ],
+      &quot;type&quot;: &quot;Activity&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/16_1&quot;,
+      &quot;type&quot;: &quot;Language&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/14_1&quot;
+      ],
+      &quot;content&quot;: &quot;Statement_string_content&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/13_1&quot;,
+      &quot;language&quot;: [
+        &quot;https://linked.art/example/type/16_1&quot;
+      ],
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;http://vocab.getty.edu/aat/300418049&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/type/14_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    }
+  ]
+}
+
+
+</code></pre>
+<h2 id="exhibition-documentation">Exhibition <strong>Documentation</strong></h2>
+<p>This information category unites referential information about the documented <em>Exhibition</em>, providing contextual data about it.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PMAF.83</td>
+<td>Digital Object</td>
+<td>This field is used to link to an instance of digital resource which serves as a digital reference document for the documented <em>Exhibition</em>.</td>
+<td>Reference Model  [Digital Object]</td>
+<td>-&gt;P02i-&gt;PC67[A83_1]-&gt;P01-&gt;D1[A83_2]</td>
+</tr>
+<tr>
+<td>PMAF.84</td>
+<td>Digital Object Type</td>
+<td>This field is used to link to a type record which indicates the kind of reference supported by the digital resource that serves as a reference for the documented <em>Exhibition</em>.</td>
+<td>Concept</td>
+<td>-&gt;P02i-&gt;PC67[A83_1]-&gt;P67.1-&gt;E55[A84_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-exhibition-documentation-ontology-graph">- Exhibition Documentation <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/doc_exhibition.png" /></p>
+<h3 id="-exhibition-documentation-rdf">- Exhibition Documentation <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://pma.us/models/exhibition_concept/E7&gt; a crm:E7_Activity ;
+    crm:P02i_is_range_of &lt;https://linked.art/example/reified_property/A83_1&gt; .
+
+&lt;https://linked.art/example/conceptual_object/A83_2&gt; a crm:D1_Digital_Object .
+
+&lt;https://linked.art/example/conceptual_object/A84_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/reified_property/A83_1&gt; a crm:PC67_refers_to ;
+    crm:P01_has_domain &lt;https://linked.art/example/conceptual_object/A83_2&gt; ;
+    crm:P67.1_has_type &lt;https://linked.art/example/conceptual_object/A84_1&gt; .
+
+
+
+</code></pre>
+<h3 id="-exhibition-documentation-json-ld">- Exhibition Documentation <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/A84_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;crm:P02i_is_range_of&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/reified_property/A83_1&quot;
+      },
+      &quot;id&quot;: &quot;https://pma.us/models/exhibition_concept/E7&quot;,
+      &quot;type&quot;: &quot;Activity&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/A83_2&quot;,
+      &quot;type&quot;: &quot;crm:D1_Digital_Object&quot;
+    },
+    {
+      &quot;crm:P01_has_domain&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/A83_2&quot;
+      },
+      &quot;crm:P67.1_has_type&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/A84_1&quot;
+      },
+      &quot;id&quot;: &quot;https://linked.art/example/reified_property/A83_1&quot;,
+      &quot;type&quot;: &quot;crm:PC67_refers_to&quot;
+    }
+  ]
+}
+
+</code></pre>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../events/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../events/" class="btn btn-xs btn-link">
+        Event
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../group/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../group/" class="btn btn-xs btn-link">
+        Group
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

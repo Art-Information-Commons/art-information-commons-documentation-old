@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="canonical" href="https://github.com/jawaharlau/pmadocumentation/person/">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Person - PMA prototype documentation</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Person", url: "#_top", children: [
+          ]},
+          {title: "Person Names and Classifications", url: "#person-names-and-classifications", children: [
+              {title: "- Person Names and Classifications Ontology Graph", url: "#-person-names-and-classifications-ontology-graph" },
+              {title: "- Person Names and Classifications RDF", url: "#-person-names-and-classifications-rdf" },
+              {title: "- Person Names and Classifications JSON-LD", url: "#-person-names-and-classifications-json-ld" },
+          ]},
+          {title: "Person Existence", url: "#person-existence", children: [
+              {title: "- Person Existence Ontology Graph", url: "#-person-existence-ontology-graph" },
+              {title: "- Person Existence RDF", url: "#-person-existence-rdf" },
+              {title: "- Person Existence JSON-LD", url: "#-person-existence-json-ld" },
+          ]},
+          {title: "Person Participation", url: "#person-participation", children: [
+              {title: "- Person Participation Ontology Graph", url: "#-person-participation-ontology-graph" },
+              {title: "- Person Participation RDF", url: "#-person-participation-rdf" },
+              {title: "- Person Participation JSON-LD", url: "#-person-participation-json-ld" },
+          ]},
+          {title: "Person Actor Relations", url: "#person-actor-relations", children: [
+              {title: "- Person Actor Relations Ontology Graph", url: "#-person-actor-relations-ontology-graph" },
+              {title: "- Person Actor Relations RDF", url: "#-person-actor-relations-rdf" },
+              {title: "- Person Actor Relations JSON-LD", url: "#-person-actor-relations-json-ld" },
+          ]},
+          {title: "Person Activities", url: "#person-activities", children: [
+              {title: "- Person Works Ontology Graph", url: "#-person-works-ontology-graph" },
+              {title: "- Person Works RDF", url: "#-person-works-rdf" },
+              {title: "- Person Works JSON-LD", url: "#-person-works-json-ld" },
+          ]},
+          {title: "Person Contact Point", url: "#person-contact-point", children: [
+              {title: "- Person Contact Point Ontology Graph", url: "#-person-contact-point-ontology-graph" },
+              {title: "- Person Contact Point RDF", url: "#-person-contact-point-rdf" },
+              {title: "- Person Contact Point JSON-LD", url: "#-person-contact-point-json-ld" },
+          ]},
+          {title: "Person Description", url: "#person-description", children: [
+              {title: "- Person Description Ontology Graph", url: "#-person-description-ontology-graph" },
+              {title: "- Person Description RDF", url: "#-person-description-rdf" },
+              {title: "- Person Description JSON-LD", url: "#-person-description-json-ld" },
+          ]},
+          {title: "Person Documentation", url: "#person-documentation", children: [
+              {title: "- Person Documentaion Ontology Graph", url: "#-person-documentaion-ontology-graph" },
+              {title: "- Person Documentaion RDF", url: "#-person-documentaion-rdf" },
+              {title: "- Person Documentaion JSON-LD", url: "#-person-documentaion-json-ld" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../group/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../group/" class="btn btn-xs btn-link">
+        Group
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../archivalresource/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../archivalresource/" class="btn btn-xs btn-link">
+        Archival Resource
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h2 id="person"><strong>Person</strong></h2>
+<p><strong>Author:</strong> Denitsa Nenova, George Bruseker</p>
+<p><strong>Version:</strong> 1.0</p>
+<p>The <em>Person</em> model is intended to enable the representation and sharing of data relevant to real-world, physical persons. It provides a list of standard fields that are typically present in the description of a <em>Person</em> in cultural heritage data systems. The intention of this reference model is to provide a consolidated, high-level formal structure comprising the most commonly reused descriptors for a <em>Person</em> entity and, further, to provide for these a set of semantic mapping to the CIDOC CRM. </p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+<th>URI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root Ontology Node</td>
+<td>E21 Person</td>
+<td>https://cidoc-crm.org/Entity/E21-Person/version-7.1.1</td>
+</tr>
+<tr>
+<td>Type Differentiator</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Model Sections Description</strong></p>
+<table>
+<thead>
+<tr>
+<th>Information Category</th>
+<th>Information Collections</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Names and Classifications</td>
+<td>Names/Alternative Names/Identifiers/Type</td>
+<td>The researcher can document various names and classification regarding the <em>Person</em>.</td>
+</tr>
+<tr>
+<td>Existence</td>
+<td>Birth/Death</td>
+<td>The researcher can document the events related to the birth and death of the <em>Person</em>.</td>
+</tr>
+<tr>
+<td>Participation</td>
+<td>Role in Activity</td>
+<td>The researcher can document the participation of the <em>Person</em> in an activity of a type.</td>
+</tr>
+<tr>
+<td>Actor Relations</td>
+<td>Membership</td>
+<td>The researcher can document the membreship of the <em>Person</em> to a Group.</td>
+</tr>
+<tr>
+<td>Activities</td>
+<td>Profession</td>
+<td>The researcher can document information about the the professional activities of the <em>Person</em>.</td>
+</tr>
+<tr>
+<td>Location</td>
+<td>Contact Details</td>
+<td>The researcher can document relevant addresses and other contact information associated with the <em>Person</em>.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Description</td>
+<td>The researcher can document various free-text descriptions of the <em>Person</em>.</td>
+</tr>
+<tr>
+<td>Documentation</td>
+<td>Digital Resource</td>
+<td>The researcher can document various weblinks and images related to the <em>Person</em>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="person-names-and-classifications">Person <strong>Names and Classifications</strong></h2>
+<p>The attribution of names and types to <em>Persons</em> is a basic human activity. A chief factor in disambiguating which <em>Person</em> is referred to in historical texts is understanding the various names and identifiers that have been given to an individual at different moments. Likewise, additional classifiers of the individual as such, such as gender, help in the disambiguation, in an information system, of the reference to one real-world individual from another.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.5</td>
+<td>Name Type</td>
+<td>This field is used to record the type of the name attributed to the documented <em>Person</em>.</td>
+<td>Concept</td>
+<td>-&gt;p1-&gt;E33_41[4_1]-&gt;p2-&gt;E55[5_1]</td>
+</tr>
+<tr>
+<td>LAF.6</td>
+<td>Name</td>
+<td>This field is used to record the string value of the name attributed to the documented <em>Person</em>.</td>
+<td>String</td>
+<td>-&gt;p1-&gt;E33_E41[4_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.7</td>
+<td>Name Language</td>
+<td>This field is used to record the language of the name attributed to the documented <em>Person</em>.</td>
+<td>Concept</td>
+<td>-&gt;p1-&gt;E33_E41[4_1]-&gt;p72-&gt;E56[7_1]</td>
+</tr>
+<tr>
+<td>LAF.44</td>
+<td>Name Source</td>
+<td>This field is used to link to a source text in which the name denoting the documented <em>Person</em> is used.</td>
+<td>Reference Model  [Textual Work]</td>
+<td>-&gt;p1-&gt;E33_E41[4_1]-&gt;p67i-&gt;E33[44_1]</td>
+</tr>
+<tr>
+<td>LAF.500</td>
+<td>Name Part</td>
+<td>This field is used to link the documented name of <em>Person</em> to its relevant name part.</td>
+<td>Collection [Name]</td>
+<td>-&gt;p1-&gt;E33_41[4_1]-&gt;p106-&gt;E33_E41[500_1]</td>
+</tr>
+<tr>
+<td>LAF.10</td>
+<td>ID</td>
+<td>This field is used to record an identifier attributed to the documented <em>Person</em>.</td>
+<td>String</td>
+<td>-&gt;p1-&gt;E42[8_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.9</td>
+<td>ID Type</td>
+<td>This field is used to record the type of the identifier attributed to the documented <em>Person</em>.</td>
+<td>Concept</td>
+<td>-&gt;p1-&gt;E42[8_1]-&gt;p2-&gt;E55[9_1]</td>
+</tr>
+<tr>
+<td>LAF.434</td>
+<td>ID Assigned By</td>
+<td>This field is used to indicate the details of the data assignment of this identifier to the documented <em>Person</em>.</td>
+<td>Collection [Data Assignment]</td>
+<td>-&gt;p1-&gt;E42[8_1]-&gt;p141i-&gt;E13[434_1]</td>
+</tr>
+<tr>
+<td>LAF.11</td>
+<td>Classification</td>
+<td>This field is used to record the formal type of the documented <em>Person</em>.</td>
+<td>Concept</td>
+<td>-&gt;p2-&gt;E55[11_1]</td>
+</tr>
+<tr>
+<td>LAF.229</td>
+<td>Nationality</td>
+<td>This field is used to record the nationality of the documented <em>Person</em>.</td>
+<td>Concept</td>
+<td>-&gt;p2-&gt;E55[229_1]</td>
+</tr>
+<tr>
+<td>-&gt;p2-&gt;E55[229_1]-&gt;p2-&gt;E55[229_2]</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>LAF.230</td>
+<td>Gender</td>
+<td>This field is used to record the gender of the documented <em>Person</em>.</td>
+<td>Concept</td>
+<td>-&gt;p2-&gt;E55[230_1]-&gt;p2-&gt;E55[230_1]-&gt;p2-&gt;E55[230_2]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-person-names-and-classifications-ontology-graph">- Person Names and Classifications <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/nc_person.png" /></p>
+<h3 id="-person-names-and-classifications-rdf">- Person Names and Classifications <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://pma.us/models/person/E21&gt; a crm:E21_Person ;
+    crm:P1_is_identified_by &lt;https://linked.art/example/conceptual_object/4_1&gt;,
+        &lt;https://linked.art/example/conceptual_object/8_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/11_1&gt;,
+        &lt;https://linked.art/example/type/229_1&gt;,
+        &lt;https://linked.art/example/type/230_1&gt; .
+
+&lt;http://vocab.getty.edu/page/aat/300379842&gt; a crm:E55_Type ;
+    rdfs:label &quot;Nationality&quot; .
+
+&lt;http://vocab.getty.edu/page/aat/300404670&gt; a crm:E55_Type ;
+    rdfs:label &quot;preferred terms&quot; .
+
+&lt;http://vocab.getty.edu/page/aat/300411835&gt; a crm:E55_Type ;
+    rdfs:label &quot;Gender&quot; .
+
+&lt;https://linked.art/example/conceptual_object/4_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P106_is_composed_of &lt;https://linked.art/example/name/500_1&gt; ;
+    crm:P190_has_symbolic_content &quot;Name_string_value&quot; ;
+    crm:P2_has_type &lt;http://vocab.getty.edu/page/aat/300404670&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/textual_object/44_1&gt; ;
+    crm:P72_has_language &lt;https://linked.art/example/type/7_1&gt; .
+
+&lt;https://linked.art/example/conceptual_object/8_1&gt; a crm:E42_Identifier ;
+    crm:P141i_was_assigned_by &lt;https://linked.art/example/event/434_1&gt; ;
+    crm:P190_has_symbolic_content &quot;Identifier_value_content&quot; ;
+    crm:P2_has_type &lt;https://linked.art/example/identifier/9_1&gt; .
+
+&lt;https://linked.art/example/event/434_1&gt; a crm:E13_Attribute_Assignment .
+
+&lt;https://linked.art/example/identifier/9_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/name/500_1&gt; a crm:E33_E41_Linguistic_Appellation .
+
+&lt;https://linked.art/example/textual_object/44_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/type/11_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/229_1&gt; a crm:E55_Type ;
+    crm:P2_has_type &lt;http://vocab.getty.edu/page/aat/300379842&gt; .
+
+&lt;https://linked.art/example/type/230_1&gt; a crm:E55_Type ;
+    crm:P2_has_type &lt;http://vocab.getty.edu/page/aat/300411835&gt; .
+
+&lt;https://linked.art/example/type/7_1&gt; a crm:E56_Language .
+
+
+
+</code></pre>
+<h3 id="-person-names-and-classifications-json-ld">- Person Names and Classifications <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/229_1&quot;,
+        &quot;https://linked.art/example/type/230_1&quot;,
+        &quot;https://linked.art/example/type/11_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://pma.us/models/person/E21&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/8_1&quot;,
+        &quot;https://linked.art/example/conceptual_object/4_1&quot;
+      ],
+      &quot;type&quot;: &quot;Person&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;Gender&quot;,
+      &quot;id&quot;: &quot;http://vocab.getty.edu/page/aat/300411835&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/textual_object/44_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/event/434_1&quot;,
+      &quot;type&quot;: &quot;AttributeAssignment&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/11_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/name/500_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;http://vocab.getty.edu/page/aat/300404670&quot;
+      ],
+      &quot;content&quot;: &quot;Name_string_value&quot;,
+      &quot;crm:P106_is_composed_of&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/name/500_1&quot;
+      },
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/4_1&quot;,
+      &quot;language&quot;: [
+        &quot;https://linked.art/example/type/7_1&quot;
+      ],
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/textual_object/44_1&quot;
+      ],
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;http://vocab.getty.edu/page/aat/300411835&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/type/230_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;preferred terms&quot;,
+      &quot;id&quot;: &quot;http://vocab.getty.edu/page/aat/300404670&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/7_1&quot;,
+      &quot;type&quot;: &quot;Language&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/identifier/9_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;http://vocab.getty.edu/page/aat/300379842&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/type/229_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;Nationality&quot;,
+      &quot;id&quot;: &quot;http://vocab.getty.edu/page/aat/300379842&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;assigned_by&quot;: [
+        &quot;https://linked.art/example/event/434_1&quot;
+      ],
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/identifier/9_1&quot;
+      ],
+      &quot;content&quot;: &quot;Identifier_value_content&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/8_1&quot;,
+      &quot;type&quot;: &quot;Identifier&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="person-existence">Person <strong>Existence</strong></h2>
+<p>Of essential importance in identifying and tracking individuals is also their biographical information, such as their birth and death. For this reason, we have clustered descriptors relevant to such information into a common ‘existence’ category. These are described in the table below.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.183</td>
+<td>Death Place</td>
+<td>This field is used to link the documented event of death of a <em>Person</em> to a location at which it occurred.</td>
+<td>Reference Model  [Place]</td>
+<td>-&gt;P100i-&gt;E69[183_1]-&gt;P7-&gt;E53[183_2]</td>
+</tr>
+<tr>
+<td>LAF.184</td>
+<td>Death Period</td>
+<td>This field is used to link the documented event of death of a <em>Person</em> to the period during which it occurred.</td>
+<td>Reference Model  [Period]</td>
+<td>-&gt;P100i-&gt;E69[183_1]-&gt;P117-&gt;E4[184_1]</td>
+</tr>
+<tr>
+<td>LAF.187</td>
+<td>Death Date</td>
+<td>This field is used to link the documented event of death of a <em>Person</em> to an instance of time-span recording the temporal extent of the event.</td>
+<td>Collection [Timespan]</td>
+<td>-&gt;P100i-&gt;E69[183_1]-&gt;P4-&gt;E52[187_1]</td>
+</tr>
+<tr>
+<td>LAF.188</td>
+<td>Death Type</td>
+<td>This field is used to record the formal type of the documented event of death of a <em>Person</em>.</td>
+<td>Concept</td>
+<td>-&gt;P100i-&gt;E69[183_1]-&gt;P2-&gt;E55[188_1]</td>
+</tr>
+<tr>
+<td>LAF.191</td>
+<td>Death Notes</td>
+<td>This field is used to link the documented event of death of a <em>Person</em> to a statement that describes it.</td>
+<td>Collection  [Textual Work]</td>
+<td>-&gt;P100i-&gt;E69[183_1]-&gt;P67i-&gt;E33[191_1]</td>
+</tr>
+<tr>
+<td>LAF.192</td>
+<td>Birth Place</td>
+<td>This field is used to link the documented event of birth of a <em>Person</em> to a location at which it occurred.</td>
+<td>Reference Model [Place]</td>
+<td>-&gt;P98i-&gt;E67[192_1]-&gt;P7-&gt;E53[192_2]</td>
+</tr>
+<tr>
+<td>LAF.193</td>
+<td>Birth Period</td>
+<td>This field is used to link the documented event of birth of a <em>Person</em> to the period during which it occurred.</td>
+<td>Reference Model  [Period]</td>
+<td>-&gt;P98i-&gt;E67[192_1]-&gt;P117-&gt;E4[193_1]</td>
+</tr>
+<tr>
+<td>LAF.196</td>
+<td>Birth Date</td>
+<td>This field is used to link the documented event of birth of a <em>Person</em> to an instance of time-span recording the temporal extent of the event.</td>
+<td>Collection  [Timespan]</td>
+<td>-&gt;P98i-&gt;E67[192_1]-&gt;P4-&gt;E52[196_1]</td>
+</tr>
+<tr>
+<td>LAF.200</td>
+<td>Birth Notes</td>
+<td>This field is used to link the documented event of birth of a <em>Person</em> to a statement that describes it.</td>
+<td>Collection [Statement]</td>
+<td>-&gt;P98i-&gt;E67[192_1]-&gt;P67i-&gt;E33[200_1]</td>
+</tr>
+<tr>
+<td>PMAF.28</td>
+<td>Mother</td>
+<td>This field is used to record the mother of the documented <em>Person</em>.</td>
+<td>Reference Model [Person]</td>
+<td>-&gt;P98i-&gt;E67[192_1]-&gt;P96-&gt;E21[A28_1]</td>
+</tr>
+<tr>
+<td>PMAF.29</td>
+<td>Father</td>
+<td>This field is used to record the father of the documented <em>Person</em>.</td>
+<td>Reference Model [Person]</td>
+<td>-&gt;P98i-&gt;E67[192_1]-&gt;P97-&gt;E21[A29_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-person-existence-ontology-graph">- Person Existence <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/ex_person.png" /></p>
+<h3 id="-person-existence-rdf">- Person Existence <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://pma.us/models/person/E21&gt; a crm:E21_Person ;
+    crm:P100i_died_in &lt;https://linked.art/example/event/183_1&gt; ;
+    crm:P98i_was_born &lt;https://linked.art/example/event/192_1&gt; .
+
+&lt;https://linked.art/example/actor/A28_1&gt; a crm:E21_Person .
+
+&lt;https://linked.art/example/actor/A29_1&gt; a crm:E21_Person .
+
+&lt;https://linked.art/example/conceptual_object/191_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/conceptual_object/200_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/event/183_1&gt; a crm:E69_Death ;
+    crm:P117_occurs_during &lt;https://linked.art/example/event/184_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/188_1&gt; ;
+    crm:P4_has_time-span &lt;https://linked.art/example/time_span/187_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/conceptual_object/191_1&gt; ;
+    crm:P7_took_place_at &lt;https://linked.art/example/place/183_2&gt; .
+
+&lt;https://linked.art/example/event/184_1&gt; a crm:E4_Period .
+
+&lt;https://linked.art/example/event/192_1&gt; a crm:E67_Birth ;
+    crm:P117_occurs_during &lt;https://linked.art/example/event/193_1&gt; ;
+    crm:P4_has_time-span &lt;https://linked.art/example/time_span/196_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/conceptual_object/200_1&gt; ;
+    crm:P7_took_place_at &lt;https://linked.art/example/place/192_2&gt; ;
+    crm:P96_by_mother &lt;https://linked.art/example/actor/A28_1&gt; ;
+    crm:P97_from_father &lt;https://linked.art/example/actor/A29_1&gt; .
+
+&lt;https://linked.art/example/event/193_1&gt; a crm:E4_Period .
+
+&lt;https://linked.art/example/place/183_2&gt; a crm:E53_Place .
+
+&lt;https://linked.art/example/place/192_2&gt; a crm:E53_Place .
+
+&lt;https://linked.art/example/time_span/187_1&gt; a crm:E52_Time-Span .
+
+&lt;https://linked.art/example/time_span/196_1&gt; a crm:E52_Time-Span .
+
+&lt;https://linked.art/example/type/188_1&gt; a crm:E55_Type .
+
+
+
+</code></pre>
+<h3 id="-person-existence-json-ld">- Person Existence <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/188_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;born&quot;: &quot;https://linked.art/example/event/192_1&quot;,
+      &quot;died&quot;: &quot;https://linked.art/example/event/183_1&quot;,
+      &quot;id&quot;: &quot;https://pma.us/models/person/E21&quot;,
+      &quot;type&quot;: &quot;Person&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/event/193_1&quot;,
+      &quot;type&quot;: &quot;Period&quot;
+    },
+    {
+      &quot;by_mother&quot;: &quot;https://linked.art/example/actor/A28_1&quot;,
+      &quot;crm:P117_occurs_during&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/event/193_1&quot;
+      },
+      &quot;from_father&quot;: [
+        &quot;https://linked.art/example/actor/A29_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/event/192_1&quot;,
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/200_1&quot;
+      ],
+      &quot;timespan&quot;: &quot;https://linked.art/example/time_span/196_1&quot;,
+      &quot;took_place_at&quot;: [
+        &quot;https://linked.art/example/place/192_2&quot;
+      ],
+      &quot;type&quot;: &quot;Birth&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/A29_1&quot;,
+      &quot;type&quot;: &quot;Person&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/191_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/time_span/196_1&quot;,
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/place/192_2&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/time_span/187_1&quot;,
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/A28_1&quot;,
+      &quot;type&quot;: &quot;Person&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/event/184_1&quot;,
+      &quot;type&quot;: &quot;Period&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/188_1&quot;
+      ],
+      &quot;crm:P117_occurs_during&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/event/184_1&quot;
+      },
+      &quot;id&quot;: &quot;https://linked.art/example/event/183_1&quot;,
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/191_1&quot;
+      ],
+      &quot;timespan&quot;: &quot;https://linked.art/example/time_span/187_1&quot;,
+      &quot;took_place_at&quot;: [
+        &quot;https://linked.art/example/place/183_2&quot;
+      ],
+      &quot;type&quot;: &quot;Death&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/place/183_2&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/200_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="person-participation">Person <strong>Participation</strong></h2>
+<p>Of essential importance in identifying and tracking individuals is also their participation in different activities and their location.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PMAF.64</td>
+<td>Role</td>
+<td>This field is used to document the type of activity in which the documented <em>Person</em> took part.</td>
+<td>Concept</td>
+<td>-&gt;p11i-&gt;E7[A64_1]-&gt;p2-&gt;E55[A64_2]</td>
+</tr>
+<tr>
+<td>PMAF.65</td>
+<td>Activity Location</td>
+<td>This field is used to document the location of an activity in which the documented <em>Person</em> took part.</td>
+<td>Reference Model  [Place]</td>
+<td>-&gt;p11i-&gt;E7[A64_1]-&gt;p7-&gt;E53[A65_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-person-participation-ontology-graph">- Person Participation <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/part_person.png" /></p>
+<h3 id="-person-participation-rdf">- Person Participation <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://pma.us/models/person/E21&gt; a crm:E21_Person ;
+    crm:P11i_participated_in &lt;http://linked.art/example/event/A64_1&gt; .
+
+&lt;http://linked.art/example/event/A64_1&gt; a crm:E7_Activity ;
+    crm:P2_has_type &lt;http://linked.art/example/type/A64_2&gt; ;
+    crm:P7_took_place &lt;http://linked.art/example/place/A65_1&gt; .
+
+&lt;http://linked.art/example/place/A65_1&gt; a crm:E55_Place .
+
+&lt;http://linked.art/example/type/A64_2&gt; a crm:E55_Type .
+
+
+
+</code></pre>
+<h3 id="-person-participation-json-ld">- Person Participation <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://pma.us/models/person/E21&quot;,
+      &quot;participated_in&quot;: [
+        &quot;http://linked.art/example/event/A64_1&quot;
+      ],
+      &quot;type&quot;: &quot;Person&quot;
+    },
+    {
+      &quot;id&quot;: &quot;http://linked.art/example/type/A64_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;http://linked.art/example/place/A65_1&quot;,
+      &quot;type&quot;: &quot;crm:E55_Place&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;http://linked.art/example/type/A64_2&quot;
+      ],
+      &quot;crm:P7_took_place&quot;: {
+        &quot;id&quot;: &quot;http://linked.art/example/place/A65_1&quot;
+      },
+      &quot;id&quot;: &quot;http://linked.art/example/event/A64_1&quot;,
+      &quot;type&quot;: &quot;Activity&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="person-actor-relations">Person <strong>Actor Relations</strong></h2>
+<p>An area of documentation and potential disambiguation around the person relates to social relations, interpersonal or institutional. </p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.167</td>
+<td>Member of</td>
+<td>This field is used to link the documented <em>Person</em> to a broader group of which it is a member / forms a part.</td>
+<td>Reference Model  [Group]</td>
+<td>-&gt;P107i-&gt;E74[167_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-person-actor-relations-ontology-graph">- Person Actor Relations <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/act_person.png" /></p>
+<h3 id="-person-actor-relations-rdf">- Person Actor Relations <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://pma.us/models/person/E21&gt; a crm:E21_Person ;
+    crm:P107i_is_current_or_former_member_of &lt;https://linked.art/example/actor/167_1&gt; .
+
+&lt;https://linked.art/example/actor/167_1&gt; a crm:E74_Group .
+</code></pre>
+<h3 id="-person-actor-relations-json-ld">- Person Actor Relations <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;crm:P107i_is_current_or_former_member_of&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/actor/167_1&quot;
+      },
+      &quot;id&quot;: &quot;https://pma.us/models/person/E21&quot;,
+      &quot;type&quot;: &quot;Person&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/167_1&quot;,
+      &quot;type&quot;: &quot;Group&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="person-activities">Person <strong>Activities</strong></h2>
+<p>An important area of documentation and potential disambiguation around the <em>Person</em> relates to their professional activities. </p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.126</td>
+<td>Work Place</td>
+<td>This field is used to link the documented <em>Person</em>'s professional activity to a location at which it was carried out.</td>
+<td>Reference Model  [Place]</td>
+<td>-&gt;P14i-&gt;E7[126_1]-&gt;P7-&gt;E53[126_2]</td>
+</tr>
+<tr>
+<td>LAF.131</td>
+<td>Profession</td>
+<td>This field is used to link the documented <em>Person</em>'s professional activity to a name that has been attributed to it.</td>
+<td>Collection [Statement]</td>
+<td>-&gt;P14i-&gt;E7[126_1]-&gt;P1-&gt;E33_E41[131_1]</td>
+</tr>
+<tr>
+<td>LAF.133</td>
+<td>Profession Practices Dates</td>
+<td>This field is used to link the documented <em>Person</em>'s professional activity to an instance of time-span recording the temporal extent of the activity.</td>
+<td>Collection  [Timespan]</td>
+<td>-&gt;P14i-&gt;E7[126_1]-&gt;P4-&gt;E52[133_1]</td>
+</tr>
+<tr>
+<td>LAF.134</td>
+<td>Profession Type</td>
+<td>This field is used to record the formal type of the documented <em>Person</em>'s professional activity.</td>
+<td>Concept</td>
+<td>-&gt;P14i-&gt;E7[126_1]-&gt;P2-&gt;E55[134_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-person-works-ontology-graph">- Person Works <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/wor_person.png" /></p>
+<h3 id="-person-works-rdf">- Person Works <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://pma.us/models/person/E21&gt; a crm:E21_Person ;
+    crm:P14i_performed &lt;https://linked.art/example/event/126_1&gt; .
+
+&lt;https://linked.art/example/event/126_1&gt; a crm:E7_Activity ;
+    crm:P1_is_identified_by &lt;https://linked.art/example/name/131_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/134_1&gt; ;
+    crm:P4_has_time-span &lt;https://linked.art/example/time_span/133_1&gt; ;
+    crm:P7_took_place_at &lt;https://linked.art/example/place/126_2&gt; .
+
+&lt;https://linked.art/example/name/131_1&gt; a crm:E33_E41_Linguistic_Appellation .
+
+&lt;https://linked.art/example/place/126_2&gt; a crm:E53_Place .
+
+&lt;https://linked.art/example/time_span/133_1&gt; a crm:E52_Time-Span .
+
+&lt;https://linked.art/example/type/134_1&gt; a crm:E55_Type .
+
+
+</code></pre>
+<h3 id="-person-works-json-ld">- Person Works <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;carried_out&quot;: [
+        &quot;https://linked.art/example/event/126_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://pma.us/models/person/E21&quot;,
+      &quot;type&quot;: &quot;Person&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/134_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/event/126_1&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://linked.art/example/name/131_1&quot;
+      ],
+      &quot;timespan&quot;: &quot;https://linked.art/example/time_span/133_1&quot;,
+      &quot;took_place_at&quot;: [
+        &quot;https://linked.art/example/place/126_2&quot;
+      ],
+      &quot;type&quot;: &quot;Activity&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/time_span/133_1&quot;,
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/134_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/name/131_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/place/126_2&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="person-contact-point">Person <strong>Contact Point</strong></h2>
+<p>An important area of documentation and potential disambiguation around the <em>Person</em> relates to the contact information of real individuals. This normally involves the recording of the current address and another prefered form of communication with the documented <em>Person</em>.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.172</td>
+<td>Current Address</td>
+<td>This field is used to link the documented <em>Person</em> to a place at which they have been resident.</td>
+<td>Reference Model [Place]</td>
+<td>-&gt;P74-&gt;E53[172_1]</td>
+</tr>
+<tr>
+<td>LAF.169</td>
+<td>Contact Point Type</td>
+<td>This field is used to record the type of the contact Point attributed to the documented <em>Person</em>.</td>
+<td>Concept</td>
+<td>-&gt;P1-&gt;E42[168_1]-&gt;P2-&gt;E55[169_1]</td>
+</tr>
+<tr>
+<td>LAF.170</td>
+<td>Contact Details</td>
+<td>This field is used to record a contact Point attributed to the documented <em>Person</em>.</td>
+<td>String</td>
+<td>-&gt;P1-&gt;E42[168_1]-&gt;P190-&gt;rdf:literal</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-person-contact-point-ontology-graph">- Person Contact Point <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/loc_person.png" /></p>
+<h3 id="-person-contact-point-rdf">- Person Contact Point <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://pma.us/models/person/E21&gt; a crm:E21_Person ;
+    crm:P1_is_identified_by &lt;https://linked.art/example/conceptual_object/168_1&gt; ;
+    crm:P74_has_current_or_former_residence &lt;https://linked.art/example/place/172_1&gt; .
+
+&lt;https://linked.art/example/conceptual_object/168_1&gt; a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content &quot;Identifier_value_content&quot; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/169_1&gt; .
+
+&lt;https://linked.art/example/place/172_1&gt; a crm:E53_Place .
+
+&lt;https://linked.art/example/type/169_1&gt; a crm:E55_Type .
+
+</code></pre>
+<h3 id="-person-contact-point-json-ld">- Person Contact Point <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://pma.us/models/person/E21&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/168_1&quot;
+      ],
+      &quot;residence&quot;: [
+        &quot;https://linked.art/example/place/172_1&quot;
+      ],
+      &quot;type&quot;: &quot;Person&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/169_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/place/172_1&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/169_1&quot;
+      ],
+      &quot;content&quot;: &quot;Identifier_value_content&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/168_1&quot;,
+      &quot;type&quot;: &quot;Identifier&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="person-description">Person <strong>Description</strong></h2>
+<p>This category brings together the diverse field which describes the documented <em>Person</em>. It is meant to cover information concerning the type, language content of the description as well as temporal information about the description itself.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.14</td>
+<td>Statement Type</td>
+<td>This field is used to record the formal type of the statement made about the documented <em>Person</em>.</td>
+<td>Concept</td>
+<td>-&gt;p67i-&gt;E33[13_1]-&gt;p2-&gt;E55[14_1]</td>
+</tr>
+<tr>
+<td>LAF.15</td>
+<td>Statement</td>
+<td>This field is used to record the actual textual content of the statement describing the documented <em>Person</em>.</td>
+<td>String</td>
+<td>-&gt;p67i-&gt;E33[13_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.16</td>
+<td>Statement Language</td>
+<td>This field is used to record the language of the statement describing the documented <em>Person</em>.</td>
+<td>Concept</td>
+<td>-&gt;p67i-&gt;E33[13_1]-&gt;p72-&gt;E56[16_1]</td>
+</tr>
+<tr>
+<td>LAF.50</td>
+<td>Statement Name</td>
+<td>This field is used to link to a name attributed to the statement made about the documented <em>Person</em>.</td>
+<td>Collection [Name]</td>
+<td>-&gt;p67i-&gt;E33[13_1]-&gt;p1-&gt;E33_E41[50_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-person-description-ontology-graph">- Person Description <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/desc_person.png" /></p>
+<h3 id="-person-description-rdf">- Person Description <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://pma.us/models/person/E21&gt; a crm:E21_Person ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/conceptual_object/13_1&gt; .
+
+&lt;http://vocab.getty.edu/aat/300418049&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/conceptual_object/13_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P190_has_symbolic_content &quot;Statement_string_content&quot; ;
+    crm:P1_is_identified_by &lt;https://linked.art/example/name/50_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/14_1&gt; ;
+    crm:P72_has_language &lt;https://linked.art/example/type/16_1&gt; .
+
+&lt;https://linked.art/example/name/50_1&gt; a crm:E33_E41_Linguistic_Appellation .
+
+&lt;https://linked.art/example/type/14_1&gt; a crm:E55_Type ;
+    crm:P2_has_type &lt;http://vocab.getty.edu/aat/300418049&gt; .
+
+&lt;https://linked.art/example/type/16_1&gt; a crm:E56_Language .
+
+
+
+</code></pre>
+<h3 id="-person-description-json-ld">- Person Description <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://pma.us/models/person/E21&quot;,
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/13_1&quot;
+      ],
+      &quot;type&quot;: &quot;Person&quot;
+    },
+    {
+      &quot;id&quot;: &quot;http://vocab.getty.edu/aat/300418049&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/16_1&quot;,
+      &quot;type&quot;: &quot;Language&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;http://vocab.getty.edu/aat/300418049&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/type/14_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/14_1&quot;
+      ],
+      &quot;content&quot;: &quot;Statement_string_content&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/13_1&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://linked.art/example/name/50_1&quot;
+      ],
+      &quot;language&quot;: [
+        &quot;https://linked.art/example/type/16_1&quot;
+      ],
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/name/50_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    }
+  ]
+}
+
+
+</code></pre>
+<h2 id="person-documentation">Person <strong>Documentation</strong></h2>
+<p>This information category unites referential information about the documented <em>Person</em>, providing contextual data about them.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.37</td>
+<td>Same As</td>
+<td>This field is used to document a URI which is meant to indicate an equivalence between the documented <em>Person</em> and a resolvable, structured reference resource that stands as a document for this self same entity.</td>
+<td>Class</td>
+<td>-&gt;skos:ExactMatch-&gt;E1[37_1]</td>
+</tr>
+<tr>
+<td>PMAF.84</td>
+<td>Digital Object Type</td>
+<td>This field is used to link to a type record which indicates the kind of reference supported by the digital resource that serves as a reference for the documented <em>Person</em>.</td>
+<td>Concept</td>
+<td>-&gt;P02i-&gt;PC67[A83_1]-&gt;P67.1-&gt;E55[A84_1]</td>
+</tr>
+<tr>
+<td>PMAF.83</td>
+<td>Digital Object</td>
+<td>This field is used to link to an instance of digital resource which serves as a digital reference document for the documented <em>Person</em>.</td>
+<td>Reference Model [Digital Object]</td>
+<td>-&gt;P02i-&gt;PC67[A83_1]-&gt;P01-&gt;D1[A83_2]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-person-documentaion-ontology-graph">- Person Documentaion <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/doc_person.png" /></p>
+<h3 id="-person-documentaion-rdf">- Person Documentaion <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix skos: &lt;http://skos&gt; .
+
+&lt;https://pma.us/models/person/E21&gt; a crm:E21_Person ;
+    skos:ExactMatch &lt;https://linked.art/example/entity/37_1&gt; ;
+    crm:P02i_is_range_of &lt;https://linked.art/example/reified_property/A83_1&gt; .
+
+&lt;https://linked.art/example/conceptual_object/A83_2&gt; a crm:D1_Digital_Object .
+
+&lt;https://linked.art/example/conceptual_object/A84_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/entity/37_1&gt; a crm:E1_CRM_Entity .
+
+&lt;https://linked.art/example/reified_property/A83_1&gt; a crm:PC67_refers_to ;
+    crm:P01_has_domain &lt;https://linked.art/example/conceptual_object/A83_2&gt; ;
+    crm:P67.1_has_type &lt;https://linked.art/example/conceptual_object/A84_1&gt; .
+
+
+
+</code></pre>
+<h3 id="-person-documentaion-json-ld">- Person Documentaion <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;crm:P02i_is_range_of&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/reified_property/A83_1&quot;
+      },
+      &quot;http://skosExactMatch&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/entity/37_1&quot;
+      },
+      &quot;id&quot;: &quot;https://pma.us/models/person/E21&quot;,
+      &quot;type&quot;: &quot;Person&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/A83_2&quot;,
+      &quot;type&quot;: &quot;crm:D1_Digital_Object&quot;
+    },
+    {
+      &quot;crm:P01_has_domain&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/A83_2&quot;
+      },
+      &quot;crm:P67.1_has_type&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/A84_1&quot;
+      },
+      &quot;id&quot;: &quot;https://linked.art/example/reified_property/A83_1&quot;,
+      &quot;type&quot;: &quot;crm:PC67_refers_to&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/A84_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/entity/37_1&quot;,
+      &quot;type&quot;: &quot;CRMEntity&quot;
+    }
+  ]
+}
+
+</code></pre>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../group/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../group/" class="btn btn-xs btn-link">
+        Group
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../archivalresource/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../archivalresource/" class="btn btn-xs btn-link">
+        Archival Resource
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

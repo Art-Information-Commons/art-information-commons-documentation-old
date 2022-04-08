@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="canonical" href="https://github.com/jawaharlau/pmadocumentation/events/">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Event - PMA prototype documentation</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Event", url: "#_top", children: [
+          ]},
+          {title: "Event Names and Classifications", url: "#event-names-and-classifications", children: [
+              {title: "- Event Names and Classifications Ontology Graph", url: "#-event-names-and-classifications-ontology-graph" },
+              {title: "- Event Names and Classifications RDF", url: "#-event-names-and-classifications-rdf" },
+              {title: "- Event Names and Classifications JSON", url: "#-event-names-and-classifications-json" },
+          ]},
+          {title: "Event Existence", url: "#event-existence", children: [
+              {title: "- Event Existence Ontology Graph", url: "#-event-existence-ontology-graph" },
+              {title: "- Event Existence RDF", url: "#-event-existence-rdf" },
+              {title: "- Event Existence JSON-LD", url: "#-event-existence-json-ld" },
+          ]},
+          {title: "Event Documentation", url: "#event-documentation", children: [
+              {title: "- Event Documentation Ontology Graph", url: "#-event-documentation-ontology-graph" },
+              {title: "- Event Documentation RDF", url: "#-event-documentation-rdf" },
+              {title: "- Event Documentation JSON-LD", url: "#-event-documentation-json-ld" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../period/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../period/" class="btn btn-xs btn-link">
+        Period
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../exhibitions/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../exhibitions/" class="btn btn-xs btn-link">
+        Exhibition
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h2 id="event"><strong>Event</strong></h2>
+<p><strong>Author:</strong> Denitsa Nenova, George Bruseker</p>
+<p><strong>Version:</strong> 1.0</p>
+<p>The <em>Event</em> reference data model provides a list of standard fields that are typically present in the general description of an <em>Event</em>, taken in the sense of planned public or social occasions, organized towards some purpose. Examples of <em>Events</em> would be workshops, meetings, conferences, congresses and so on. The aim of this reference model is to cover basic descriptors that are typically employed in the documentation of an <em>Event</em>. This reference model aims to remain at a general level description, providing a consolidated, high-level reference data model of most commonly reused descriptors for an <em>Event</em> as such and to provide for these, in turn, a set of standard semantic mappings to the CIDOC CRM.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+<th>URI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root Ontology Node</td>
+<td>E5 Event</td>
+<td>https://cidoc-crm.org/Entity/E5-Event/version-7.1.1</td>
+</tr>
+<tr>
+<td>Type Differentiator</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Model Sections Description</strong></p>
+<table>
+<thead>
+<tr>
+<th>Information Category</th>
+<th>Information Collections</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Names and Classifications</td>
+<td>Names/Alternative Names/Identifiers/Type</td>
+<td>The researcher can document various names and classification regarding the <em>Event</em>.</td>
+</tr>
+<tr>
+<td>Existence</td>
+<td>Existence</td>
+<td>The researcher can document various free text descriptions of the <em>Event</em>.</td>
+</tr>
+<tr>
+<td>Documentation</td>
+<td>Digital Object</td>
+<td>The researcher can document citations relative to the period, link to images related to period and document external URIs of documentation for the same <em>Event</em>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="event-names-and-classifications">Event <strong>Names and Classifications</strong></h2>
+<p>The attribution of names and types to <em>Events</em>, as with other entities, is a basic human activity. A chief factor in disambiguating <em>Events</em> lies in understanding the various names and identifiers that have been given to them at different moments in their individual histories. Historical <em>Events</em> often receive different names according to the groups naming it, as well as receiving different kinds of names according to contexts (such as abbreviations and so on). Likewise, additional classifiers of the <em>Event</em>, such as how it has been formally categorized, give important distinguishing characteristics.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.6</td>
+<td>Event Name</td>
+<td>This field is used to record the string value of the name attributed to the documented <em>Event</em>.</td>
+<td>String</td>
+<td>-&gt;p1-&gt;E33_E41[4_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.11</td>
+<td>Event Type</td>
+<td>This field is used to record the formal type of the documented <em>Event</em>.</td>
+<td>Concept</td>
+<td>-&gt;p2-&gt;E55[11_1]</td>
+</tr>
+<tr>
+<td>LAF.10</td>
+<td>Event ID</td>
+<td>This field is used to record an identifier attributed to the documented <em>Event</em>.</td>
+<td>String</td>
+<td>-&gt;p1-&gt;E42[8_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.9</td>
+<td>ID Type</td>
+<td>This field is used to record the type of the identifier attributed to the documented <em>Event</em>.</td>
+<td>Concept</td>
+<td>-&gt;p1-&gt;E42[8_1]-&gt;p2-&gt;E55[9_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-event-names-and-classifications-ontology-graph">- Event Names and Classifications <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/nc_event.png" /></p>
+<h3 id="-event-names-and-classifications-rdf">- Event Names and Classifications <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://pma.us/models/event/E5&gt; a crm:E5_Event ;
+    crm:P1_is_identified_by &lt;https://linked.art/example/conceptual_object/4_1&gt;,
+        &lt;https://linked.art/example/conceptual_object/8_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/11_1&gt; .
+
+&lt;https://linked.art/example/conceptual_object/4_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content &quot;Name_string_value&quot; .
+
+&lt;https://linked.art/example/conceptual_object/8_1&gt; a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content &quot;Identifier_value_content&quot; ;
+    crm:P2_has_type &lt;https://linked.art/example/identifier/9_1&gt; .
+
+&lt;https://linked.art/example/identifier/9_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/11_1&gt; a crm:E55_Type .
+
+
+
+</code></pre>
+<h3 id="-event-names-and-classifications-json">- Event Names and Classifications <strong>JSON</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;content&quot;: &quot;Name_string_value&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/4_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/identifier/9_1&quot;
+      ],
+      &quot;content&quot;: &quot;Identifier_value_content&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/8_1&quot;,
+      &quot;type&quot;: &quot;Identifier&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/identifier/9_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/11_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/11_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://pma.us/models/event/E5&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/4_1&quot;,
+        &quot;https://linked.art/example/conceptual_object/8_1&quot;
+      ],
+      &quot;type&quot;: &quot;Event&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="event-existence">Event <strong>Existence</strong></h2>
+<p>The existence of an <em>Event</em> must be determined by documentary or physical evidence of the past. The documentation of the existence of an <em>Event</em>, however, essentially relates to ascribing that <em>Event</em> dates, where possible, durations otherwise, and a description of the temporality where none of the above is possible. The descriptors and mappings for these potentialities are documented in the table below.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.177</td>
+<td>Event Timespan</td>
+<td>This field is used to link the documented temporal <em>Event</em> to an instance of time-span recording the temporal extent of the <em>Event</em>.</td>
+<td>Collection [Timespan]</td>
+<td>-&gt;P4-&gt;E52[177_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-event-existence-ontology-graph">- Event Existence <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/ex_event.png" /></p>
+<h3 id="-event-existence-rdf">- Event Existence <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://pma.us/models/event/E5&gt; a crm:E5_Event ;
+    crm:P4_has_time-span &lt;https://linked.art/example/time_span/177_1&gt; .
+
+&lt;https://linked.art/example/time_span/177_1&gt; a crm:E52_Time-Span .
+
+
+
+</code></pre>
+<h3 id="-event-existence-json-ld">- Event Existence <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/time_span/177_1&quot;,
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://pma.us/models/event/E5&quot;,
+      &quot;timespan&quot;: &quot;https://linked.art/example/time_span/177_1&quot;,
+      &quot;type&quot;: &quot;Event&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="event-documentation">Event <strong>Documentation</strong></h2>
+<p>This information category unites referential information about the documented <em>Event</em>, providing contextual data about it.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PMAF.83</td>
+<td>Digital Object</td>
+<td>This field is used to link to an instance of digital resource which serves as a digital reference document for the documented <em>Event</em>.</td>
+<td>Reference Model [Digital Object]</td>
+<td>-&gt;P02i-&gt;PC67[A83_1]-&gt;P01-&gt;D1[A83_2]</td>
+</tr>
+<tr>
+<td>PMAF.84</td>
+<td>Digital Object Type</td>
+<td>This field is used to link to a type record which indicates the kind of reference supported by the digital resource that serves as a reference for the documented <em>Event</em>.</td>
+<td>Concept</td>
+<td>-&gt;P02i-&gt;PC67[A83_1]-&gt;P67.1-&gt;E55[A84_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-event-documentation-ontology-graph">- Event Documentation <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/doc_event.png" /></p>
+<h3 id="-event-documentation-rdf">- Event Documentation <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://pma.us/models/event/E5&gt; a crm:E5_Event ;
+    crm:P02i_is_range_of &lt;https://linked.art/example/reified_property/A83_1&gt; .
+
+&lt;https://linked.art/example/conceptual_object/A83_2&gt; a crm:D1_Digital_Object .
+
+&lt;https://linked.art/example/conceptual_object/A84_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/reified_property/A83_1&gt; a crm:PC67_refers_to ;
+    crm:P01_has_domain &lt;https://linked.art/example/conceptual_object/A83_2&gt; ;
+    crm:P67.1_has_type &lt;https://linked.art/example/conceptual_object/A84_1&gt; .
+
+
+
+</code></pre>
+<h3 id="-event-documentation-json-ld">- Event Documentation <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/A84_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;crm:P02i_is_range_of&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/reified_property/A83_1&quot;
+      },
+      &quot;id&quot;: &quot;https://pma.us/models/event/E5&quot;,
+      &quot;type&quot;: &quot;Event&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/A83_2&quot;,
+      &quot;type&quot;: &quot;crm:D1_Digital_Object&quot;
+    },
+    {
+      &quot;crm:P01_has_domain&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/A83_2&quot;
+      },
+      &quot;crm:P67.1_has_type&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/A84_1&quot;
+      },
+      &quot;id&quot;: &quot;https://linked.art/example/reified_property/A83_1&quot;,
+      &quot;type&quot;: &quot;crm:PC67_refers_to&quot;
+    }
+  ]
+}
+
+</code></pre>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../period/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../period/" class="btn btn-xs btn-link">
+        Period
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../exhibitions/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../exhibitions/" class="btn btn-xs btn-link">
+        Exhibition
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
