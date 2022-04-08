@@ -1,5 +1,5 @@
 site_name: PMA prototype documentation
-site_url: https://jubilant-umbrella-7d59053a.pages.github.io/
+site_url: https://jvinegra.github.io/art-information-commons-documentation/
 use_directory_urls: true
 nav:
     - Data Model: index.md
