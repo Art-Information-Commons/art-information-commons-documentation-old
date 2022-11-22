@@ -1,0 +1,22 @@
+site_name: PMA prototype documentation
+site_url: https://github.com/jawaharlau/pmadocumentation/
+use_directory_urls: true
+nav:
+    - Data Model: index.md
+    - Artwork: artwork.md
+    - Textual Work: textualwork.md
+    - Archival Resource: archivalresource.md
+    - Person: person.md
+    - Group: group.md
+    - Exhibition: exhibitions.md
+    - Event: events.md
+    - Period: period.md
+    - Place: place.md
+    - Digital Object: image.md
+    - Collections: collection.md
+theme: windmill
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - tables
+

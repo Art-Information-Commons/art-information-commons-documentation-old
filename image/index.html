@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="canonical" href="https://github.com/jawaharlau/pmadocumentation/image/">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Digital Object - PMA prototype documentation</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Digital Object Names and Classifications", url: "#_top", children: [
+              {title: "- Digital Object Names and Classifications Ontology Graph", url: "#-digital-object-names-and-classifications-ontology-graph" },
+              {title: "- Digital Object Names and Classifications RDF", url: "#-digital-object-names-and-classifications-rdf" },
+              {title: "- Digital Object Names and Classifications JSON-LD", url: "#-digital-object-names-and-classifications-json-ld" },
+          ]},
+          {title: "Digital Object Existence", url: "#digital-object-existence", children: [
+              {title: "- Digital Object Existence Ontology Graph", url: "#-digital-object-existence-ontology-graph" },
+              {title: "- Digital Object Existence RDF", url: "#-digital-object-existence-rdf" },
+              {title: "- Digital Object Existence JSON-LD", url: "#-digital-object-existence-json-ld" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../collection/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../collection/" class="btn btn-xs btn-link">
+        Collections
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../place/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../place/" class="btn btn-xs btn-link">
+        Place
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><strong>Digital Object</strong></p>
+<p><strong>Author:</strong> Denitsa Nenova, George Bruseker</p>
+<p><strong>Version:</strong> 1.0</p>
+<p>The <em>Digital Object</em> reference data model provides a list of standard fields that are typically present in the general description of a <em>Digital Object</em> in a cultural heritage data system. A <em>Digital Object</em> is meant in the sense of a digitally encoded information object represented as bit sequences that have been encoded with a particular format and can be digitally decoded and represented to an end user of a digital information system. <em>Digital Objects</em> are often stored as reference or documentation objects relative to cultural heritage items such as textual descriptions stored as PDFs, documentary images, 3D representations and so on. <em>Digital Objects</em> can also form cultural heritage objects in their own right, though this model does not aim to represent this potential aspect of the <em>Digital Object</em>. Because of the choice to model, the <em>Digital Object</em> in its role as a secondary documentary resource, the reference data model has been kept as light as possible.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+<th>URI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root Ontology Node</td>
+<td>D1 Digital Object</td>
+<td>https://cidoc-crm.org/Entity/D1-Digital Object/version-7.1.1</td>
+</tr>
+<tr>
+<td>Type Differentiator</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Model Sections Description</strong></p>
+<table>
+<thead>
+<tr>
+<th>Information Category</th>
+<th>Information Collections</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Names and Classifications</td>
+<td>Names/Alternative Names/Identifiers/Type</td>
+<td>The researcher can document various names and classification regarding the <em>Digital Object</em>.</td>
+</tr>
+<tr>
+<td>Existence</td>
+<td>Creation</td>
+<td>The researcher can document the cretaion of the <em>Digital Object</em>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="digital-object-names-and-classifications">Digital Object <strong>Names and Classifications</strong></h2>
+<p>The attribution of identifiers, names and types to a <em>Digital Object</em>, as with other entities, is a basic human activity. It is crucial to document these aspects in order to be able to store and retrieve the correct <em>Digital Object</em>.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.10</td>
+<td>Digital Object Identifier</td>
+<td>This field is used to record an identifier attributed to the documented <em>Digital Object</em>.</td>
+<td>String</td>
+<td>-&gt;p1-&gt;E42[8_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.9</td>
+<td>Digital Object Identifier type</td>
+<td>This field is used to record the type of the identifier attributed to the documented <em>Digital Object</em>.</td>
+<td>Concept</td>
+<td>-&gt;p1-&gt;E42[8_1]-&gt;p2-&gt;E55[9_1]</td>
+</tr>
+<tr>
+<td>LAF.6</td>
+<td>Digital Object Name</td>
+<td>This field is used to record the string value of the name attributed to the documented <em>Digital Object</em>.</td>
+<td>String</td>
+<td>-&gt;p1-&gt;E33_E41[4_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.5</td>
+<td>Digital Object Name type</td>
+<td>This field is used to record the type of the name attributed to the documented <em>Digital Object</em>.</td>
+<td>Concept</td>
+<td>-&gt;p1-&gt;E33_41[4_1]-&gt;p2-&gt;E55[5_1]</td>
+</tr>
+<tr>
+<td>LAF.11</td>
+<td>Digital Object Type</td>
+<td>This field is used to record the formal type of the documented <em>Digital Object</em>.</td>
+<td>Concept</td>
+<td>-&gt;p2-&gt;E55[11_1]</td>
+</tr>
+<tr>
+<td>LAF.114</td>
+<td>Digital Object File Type</td>
+<td>This field is used to record the formal file type of the documented <em>Digital Object</em>.</td>
+<td>Concept</td>
+<td>-&gt;p129-&gt;E73[112_1]-&gt;p2-&gt;E55[114_1]</td>
+</tr>
+<tr>
+<td>LAF.115</td>
+<td>Digital Object File Format</td>
+<td>This field is used to record the file format of the documented <em>Digital Object</em> .</td>
+<td>String</td>
+<td>-&gt;p129-&gt;E73[112_1]-&gt;dc:format-&gt;rdf:literal</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-digital-object-names-and-classifications-ontology-graph">- Digital Object Names and Classifications <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/nc_digital.png" /></p>
+<h3 id="-digital-object-names-and-classifications-rdf">- Digital Object Names and Classifications <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix dc: &lt;http://dc&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://pma.us/models/digital_resources/D1&gt; a crm:D1_Digital_Object ;
+    crm:P129_is_about &lt;https://linked.art/example/conceptual_object/112_1&gt; ;
+    crm:P1_is_identified_by &lt;https://linked.art/example/conceptual_object/4_1&gt;,
+        &lt;https://linked.art/example/conceptual_object/8_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/11_1&gt; .
+
+&lt;http://vocab.getty.edu/page/aat/300404670&gt; a crm:E55_Type ;
+    rdfs:label &quot;preferred terms&quot; .
+
+&lt;https://linked.art/example/conceptual_object/112_1&gt; a crm:E73_Information_Object ;
+    dc:format &quot;format_value&quot; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/114_1&gt; .
+
+&lt;https://linked.art/example/conceptual_object/4_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content &quot;Name_string_value&quot; ;
+    crm:P2_has_type &lt;http://vocab.getty.edu/page/aat/300404670&gt; .
+
+&lt;https://linked.art/example/conceptual_object/8_1&gt; a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content &quot;Identifier_value_content&quot; ;
+    crm:P2_has_type &lt;https://linked.art/example/identifier/9_1&gt; .
+
+&lt;https://linked.art/example/identifier/9_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/114_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/11_1&gt; a crm:E55_Type .
+
+
+
+
+
+
+</code></pre>
+<h3 id="-digital-object-names-and-classifications-json-ld">- Digital Object Names and Classifications <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;classified_as&quot;: [
+        &quot;http://vocab.getty.edu/page/aat/300404670&quot;
+      ],
+      &quot;content&quot;: &quot;Name_string_value&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/4_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/identifier/9_1&quot;
+      ],
+      &quot;content&quot;: &quot;Identifier_value_content&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/8_1&quot;,
+      &quot;type&quot;: &quot;Identifier&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;preferred terms&quot;,
+      &quot;id&quot;: &quot;http://vocab.getty.edu/page/aat/300404670&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/identifier/9_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;about&quot;: [
+        &quot;https://linked.art/example/conceptual_object/112_1&quot;
+      ],
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/11_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://pma.us/models/digital_resources/D1&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/8_1&quot;,
+        &quot;https://linked.art/example/conceptual_object/4_1&quot;
+      ],
+      &quot;type&quot;: &quot;crm:D1_Digital_Object&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/11_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/114_1&quot;
+      ],
+      &quot;http://dcformat&quot;: &quot;format_value&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/112_1&quot;,
+      &quot;type&quot;: &quot;InformationObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/114_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="digital-object-existence">Digital Object <strong>Existence</strong></h2>
+<p>Of essential import in identifying and tracking a <em>Digital Object</em> are its creation and modification information. The model presented allows the tracking of the machine event which originally created the <em>Digital Object</em> as well as subsequent machine events of a modifying character of which it was the output. The destruction of the <em>Digital Object</em> is not modelled as being irrelevant to the use scope of integrated CH reference documentation.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.86</td>
+<td>Digital Object Created by</td>
+<td>This field is used to link the documented <em>Digital Object</em> creation activity to an actor responsible for carrying it out.</td>
+<td>Reference Model [Person/Group]</td>
+<td>-&gt;P94i-&gt;E65[71_1]-&gt;P14-&gt;E39[86_1]</td>
+</tr>
+<tr>
+<td>LAF.89</td>
+<td>Digital Object Created using</td>
+<td>This field is used to link the documented <em>Digital Object</em> creation activity to an instance of physical object used in the exercise of this activity in a manner consequential to its outcome.</td>
+<td>Reference Model [Object]</td>
+<td>-&gt;P94i-&gt;E65[71_1]-&gt;P16-&gt;E22[89_1]</td>
+</tr>
+<tr>
+<td>LAF.91</td>
+<td>Digital Object Creation type</td>
+<td>This field is used to record the formal type of the documented <em>Digital Object</em> creation activity.</td>
+<td>Concept</td>
+<td>-&gt;P94i-&gt;E65[71_1]-&gt;P2-&gt;E55[91_1]</td>
+</tr>
+<tr>
+<td>LAF.90</td>
+<td>Digital Object Creation time</td>
+<td>This field is used to link the documented <em>Digital Object</em> creation activity to an instance of time-span recording the temporal extent of the activity.</td>
+<td>Collection  [Timespan]</td>
+<td>-&gt;P94i-&gt;E65[71_1]-&gt;P4-&gt;E52[90_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-digital-object-existence-ontology-graph">- Digital Object Existence <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/ex_digital.png" /></p>
+<h3 id="-digital-object-existence-rdf">- Digital Object Existence <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://pma.us/models/digital_resources/D1&gt; a crm:D1_Digital_Object ;
+    crm:P94i_was_created_by &lt;https://linked.art/example/event/71_1&gt; .
+
+&lt;https://linked.art/example/actor/86_1&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/event/71_1&gt; a crm:E65_Creation ;
+    crm:P14_carried_out_by &lt;https://linked.art/example/actor/86_1&gt; ;
+    crm:P16_used_specific_object &lt;https://linked.art/example/physical_object/89_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/91_1&gt; ;
+    crm:P4_has_time-span &lt;https://linked.art/example/time_span/90_1&gt; .
+
+&lt;https://linked.art/example/physical_object/89_1&gt; a crm:E22_Human-Made_Object .
+
+&lt;https://linked.art/example/time_span/90_1&gt; a crm:E52_Time-Span .
+
+&lt;https://linked.art/example/type/91_1&gt; a crm:E55_Type .
+
+
+
+
+</code></pre>
+<h3 id="-digital-object-existence-json-ld">- Digital Object Existence <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;created_by&quot;: &quot;https://linked.art/example/event/71_1&quot;,
+      &quot;id&quot;: &quot;https://pma.us/models/digital_resources/D1&quot;,
+      &quot;type&quot;: &quot;crm:D1_Digital_Object&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/86_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/time_span/90_1&quot;,
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    },
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://linked.art/example/actor/86_1&quot;
+      ],
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/91_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/event/71_1&quot;,
+      &quot;timespan&quot;: &quot;https://linked.art/example/time_span/90_1&quot;,
+      &quot;type&quot;: &quot;Creation&quot;,
+      &quot;used_specific_object&quot;: [
+        &quot;https://linked.art/example/physical_object/89_1&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/physical_object/89_1&quot;,
+      &quot;type&quot;: &quot;HumanMadeObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/91_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    }
+  ]
+}
+
+
+</code></pre>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../collection/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../collection/" class="btn btn-xs btn-link">
+        Collections
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../place/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../place/" class="btn btn-xs btn-link">
+        Place
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

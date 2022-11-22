@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="canonical" href="https://github.com/jawaharlau/pmadocumentation/collection/">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Collections - PMA prototype documentation</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Collections", url: "#_top", children: [
+          ]},
+          {title: "Collection Name", url: "#collection-name", children: [
+              {title: "- Collection Name Ontology Graph", url: "#-collection-name-ontology-graph" },
+              {title: "- Collection Name RDF", url: "#-collection-name-rdf" },
+              {title: "- Collection Name JSON-LD", url: "#-collection-name-json-ld" },
+          ]},
+          {title: "Collection Identifier", url: "#collection-identifier", children: [
+              {title: "- Collection Identifier Ontology Graph", url: "#-collection-identifier-ontology-graph" },
+              {title: "- Collection Identifier RDF", url: "#-collection-identifier-rdf" },
+              {title: "- Collection Identifier JSON-LD", url: "#-collection-identifier-json-ld" },
+          ]},
+          {title: "Collection Statement", url: "#collection-statement", children: [
+              {title: "- Collection Statement Ontology Graph", url: "#-collection-statement-ontology-graph" },
+              {title: "- Collection Statement RDF", url: "#-collection-statement-rdf" },
+              {title: "- Collection Statement JSON-LD", url: "#-collection-statement-json-ld" },
+          ]},
+          {title: "Collection Timespan", url: "#collection-timespan", children: [
+              {title: "- Collection Timespan Ontology Graph", url: "#-collection-timespan-ontology-graph" },
+              {title: "- Collection Timespan RDF", url: "#-collection-timespan-rdf" },
+              {title: "- Collection Timespan JSON-LD", url: "#-collection-timespan-json-ld" },
+          ]},
+          {title: "Collection Creation", url: "#collection-creation", children: [
+              {title: "- Collection Creation Ontology Graph", url: "#-collection-creation-ontology-graph" },
+              {title: "- Collection Creation RDF", url: "#-collection-creation-rdf" },
+              {title: "- Collection Creation JSON-LD", url: "#-collection-creation-json-ld" },
+          ]},
+          {title: "Collection Data Assignment", url: "#collection-data-assignment", children: [
+              {title: "- Collection Data Assignment Ontology Graph", url: "#-collection-data-assignment-ontology-graph" },
+              {title: "- Collection Data Assignment RDF", url: "#-collection-data-assignment-rdf" },
+              {title: "- Collection Data Assignment JSON-LD", url: "#-collection-data-assignment-json-ld" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav">
+      <a href="../image/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../image/" class="btn btn-xs btn-link">
+        Digital Object
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h2 id="collections"><strong>Collections</strong></h2>
+<p><strong>Author:</strong> Denitsa Nenova, George Bruseker</p>
+<p><strong>Version:</strong> 1.0</p>
+<h2 id="collection-name">Collection <strong>Name</strong></h2>
+<table>
+<thead>
+<tr>
+<th>Field ID</th>
+<th>Name</th>
+<th>Data Type</th>
+<th>Description</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.4</td>
+<td>Name Label</td>
+<td>String</td>
+<td>This field is used to record the string value of the machine readable label used for displaying the instance of name that is used to denote the documented entity.</td>
+<td>-&gt;p1-&gt;E33_41[4_1]-&gt;rdfs:label-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.5</td>
+<td>Name Type</td>
+<td>Concept</td>
+<td>This field is used to record the type of the name attributed to the documented entity.</td>
+<td>-&gt;p1-&gt;E33_41[4_1]-&gt;p2-&gt;E55[5_1]</td>
+</tr>
+<tr>
+<td>LAF.6</td>
+<td>Name Content</td>
+<td>String</td>
+<td>This field is used to record the string value of the name attributed to the documented entity.</td>
+<td>-&gt;p1-&gt;E33_E41[4_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.44</td>
+<td>Name Source</td>
+<td>Reference Model  [Textual Work]</td>
+<td>This field is used to link to a source text in which the name denoting the documented entity is used.</td>
+<td>-&gt;p1-&gt;E33_E41[4_1]-&gt;p67i-&gt;E33[44_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-collection-name-ontology-graph">- Collection Name <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/name_col.png" /></p>
+<h3 id="-collection-name-rdf">- Collection Name <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://pma.us/models/person/E1&gt; a crm:E1_CRM_Entity ;
+    crm:P1_is_identified_by &lt;https://linked.art/example/conceptual_object/4_1&gt; .
+
+&lt;http://vocab.getty.edu/page/aat/300404670&gt; a crm:E55_Type ;
+    rdfs:label &quot;preferred terms&quot; .
+
+&lt;https://linked.art/example/conceptual_object/4_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    rdfs:label &quot;Name_label_value&quot; ;
+    crm:P190_has_symbolic_content &quot;Name_string_value&quot; ;
+    crm:P2_has_type &lt;http://vocab.getty.edu/page/aat/300404670&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/textual_object/44_1&gt; ;
+    rdfs:comment &quot;LAF.4_name_label&quot; .
+
+&lt;https://linked.art/example/textual_object/44_1&gt; a crm:E33_Linguistic_Object .
+
+</code></pre>
+<h3 id="-collection-name-json-ld">- Collection Name <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;_label&quot;: &quot;preferred terms&quot;,
+      &quot;id&quot;: &quot;http://vocab.getty.edu/page/aat/300404670&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/textual_object/44_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://pma.us/models/person/E1&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/4_1&quot;
+      ],
+      &quot;type&quot;: &quot;CRMEntity&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;Name_label_value&quot;,
+      &quot;classified_as&quot;: [
+        &quot;http://vocab.getty.edu/page/aat/300404670&quot;
+      ],
+      &quot;content&quot;: &quot;Name_string_value&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/4_1&quot;,
+      &quot;rdfs:comment&quot;: &quot;LAF.4_name_label&quot;,
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/textual_object/44_1&quot;
+      ],
+      &quot;type&quot;: &quot;Name&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="collection-identifier">Collection <strong>Identifier</strong></h2>
+<table>
+<thead>
+<tr>
+<th>Field ID</th>
+<th>Name</th>
+<th>Data Type</th>
+<th>Description</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.8</td>
+<td>Identifier Label</td>
+<td>String</td>
+<td>This field is used to record the string value of the machine readable label used for displaying the instance of identifier that is used to denote the documented entity.</td>
+<td>-&gt;p1-&gt;E42[8_1]-&gt;rdfs:label-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.9</td>
+<td>Identifier Type</td>
+<td>Concept</td>
+<td>This field is used to record the type of the identifier attributed to the documented entity.</td>
+<td>-&gt;p1-&gt;E42[8_1]-&gt;p2-&gt;E55[9_1]</td>
+</tr>
+<tr>
+<td>LAF.10</td>
+<td>Identifier Content</td>
+<td>String</td>
+<td>This field is used to record an identifier attributed to the documented entity.</td>
+<td>-&gt;p1-&gt;E42[8_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.45</td>
+<td>Identifier Source</td>
+<td>Reference Model [Textual Work]</td>
+<td>This field is used to link to a source text in which the identifier denoting the documented entity is used.</td>
+<td>-&gt;p1-&gt;E42[8_1]-&gt;p67i-&gt;E33[45_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-collection-identifier-ontology-graph">- Collection Identifier <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/iden_col.png" /></p>
+<h3 id="-collection-identifier-rdf">- Collection Identifier <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://pma.us/models/person/E1&gt; a crm:E1_CRM_Entity ;
+    crm:P1_is_identified_by &lt;https://linked.art/example/conceptual_object/8_1&gt; .
+
+&lt;https://linked.art/example/conceptual_object/8_1&gt; a crm:E42_Identifier ;
+    rdfs:label &quot;Identifier_label_value&quot; ;
+    crm:P190_has_symbolic_content &quot;Identifier_value_content&quot; ;
+    crm:P2_has_type &lt;https://linked.art/example/identifier/9_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/textual_object/45_1&gt; .
+
+&lt;https://linked.art/example/identifier/9_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/textual_object/45_1&gt; a crm:E33_Linguistic_Object .
+
+
+</code></pre>
+<h3 id="-collection-identifier-json-ld">- Collection Identifier <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/textual_object/45_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;Identifier_label_value&quot;,
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/identifier/9_1&quot;
+      ],
+      &quot;content&quot;: &quot;Identifier_value_content&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/8_1&quot;,
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/textual_object/45_1&quot;
+      ],
+      &quot;type&quot;: &quot;Identifier&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/identifier/9_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://pma.us/models/person/E1&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/8_1&quot;
+      ],
+      &quot;type&quot;: &quot;CRMEntity&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="collection-statement">Collection <strong>Statement</strong></h2>
+<table>
+<thead>
+<tr>
+<th>Field ID</th>
+<th>Name</th>
+<th>Data Type</th>
+<th>Description</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.13</td>
+<td>Statement Label</td>
+<td>String</td>
+<td>This field is used to record the string value of the machine readable label used for displaying the instance of statement that describes the documented entity.</td>
+<td>-&gt;p67i-&gt;E33[13_1]-&gt;rdfs:label-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.14</td>
+<td>Statement Type</td>
+<td>Concept</td>
+<td>This field is used to record the formal type of the statement made about the documented entity.</td>
+<td>-&gt;p67i-&gt;E33[13_1]-&gt;p2-&gt;E55[14_1]</td>
+</tr>
+<tr>
+<td>LAF.15</td>
+<td>Statement Content</td>
+<td>String</td>
+<td>This field is used to record the actual textual content of the statement describing the documented entity.</td>
+<td>-&gt;p67i-&gt;E33[13_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.16</td>
+<td>Statement Language</td>
+<td>Concept</td>
+<td>This field is used to record the language of the statement describing the documented entity.</td>
+<td>-&gt;p67i-&gt;E33[13_1]-&gt;p72-&gt;E56[16_1]</td>
+</tr>
+<tr>
+<td>LAF.50</td>
+<td>Statement Name</td>
+<td>Collection [Name]</td>
+<td>This field is used to link to a name attributed to the statement made about the documented entity.</td>
+<td>-&gt;p67i-&gt;E33[13_1]-&gt;p1-&gt;E33_E41[50_1]</td>
+</tr>
+<tr>
+<td>LAF.55</td>
+<td>Statement Source</td>
+<td>Reference Model [Textual Work]</td>
+<td>This field is used to link to a source text from which the statement describing the documented entity is derived.</td>
+<td>-&gt;p67i-&gt;E33[13_1]-&gt;p67i-&gt;E33[55_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-collection-statement-ontology-graph">- Collection Statement <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/stat_col.png" /></p>
+<h3 id="-collection-statement-rdf">- Collection Statement <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://pma.us/models/person/E1&gt; a crm:E1_CRM_Entity ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/conceptual_object/13_1&gt; .
+
+&lt;http://vocab.getty.edu/aat/300418049&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/conceptual_object/13_1&gt; a crm:E33_Linguistic_Object ;
+    rdfs:label &quot;Statement_label_value&quot; ;
+    crm:P190_has_symbolic_content &quot;Statement_string_content&quot; ;
+    crm:P1_is_identified_by &lt;https://linked.art/example/name/50_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/14_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/statement/55_1&gt; ;
+    crm:P72_has_language &lt;https://linked.art/example/type/16_1&gt; .
+
+&lt;https://linked.art/example/name/50_1&gt; a crm:E33_E41_Linguistic_Appellation .
+
+&lt;https://linked.art/example/statement/55_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/type/14_1&gt; a crm:E55_Type ;
+    crm:P2_has_type &lt;http://vocab.getty.edu/aat/300418049&gt; .
+
+&lt;https://linked.art/example/type/16_1&gt; a crm:E56_Language .
+
+
+
+</code></pre>
+<h3 id="-collection-statement-json-ld">- Collection Statement <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;_label&quot;: &quot;Statement_label_value&quot;,
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/14_1&quot;
+      ],
+      &quot;content&quot;: &quot;Statement_string_content&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/13_1&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://linked.art/example/name/50_1&quot;
+      ],
+      &quot;language&quot;: [
+        &quot;https://linked.art/example/type/16_1&quot;
+      ],
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/statement/55_1&quot;
+      ],
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://pma.us/models/person/E1&quot;,
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/13_1&quot;
+      ],
+      &quot;type&quot;: &quot;CRMEntity&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;http://vocab.getty.edu/aat/300418049&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/type/14_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/statement/55_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;http://vocab.getty.edu/aat/300418049&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/name/50_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/16_1&quot;,
+      &quot;type&quot;: &quot;Language&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="collection-timespan">Collection <strong>Timespan</strong></h2>
+<table>
+<thead>
+<tr>
+<th>Field ID</th>
+<th>Name</th>
+<th>Data Type</th>
+<th>Description</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.22</td>
+<td>Timespan Duration</td>
+<td>Concept</td>
+<td>This field is used to link an instance of timespan with an instance of dimension which describes the temporal duration of the timespan of the documented event.</td>
+<td>-&gt;p4-&gt;E52[22_1]-&gt;p191-&gt;E54[22_2]</td>
+</tr>
+<tr>
+<td>LAF.23</td>
+<td>Timespan End of the Begin</td>
+<td>Date</td>
+<td>This field is used to record the latest possible start date for the timespan of the documented event.</td>
+<td>-&gt;p4-&gt;E52[22_1]-&gt;p81a-&gt;xsl:date</td>
+</tr>
+<tr>
+<td>LAF.24</td>
+<td>Timespan Begin of the End</td>
+<td>Date</td>
+<td>This field is used to record the earliest possible end date for the timespan of the documented event.</td>
+<td>-&gt;p4-&gt;E52[22_1]-&gt;p81b-&gt;xsl:date</td>
+</tr>
+<tr>
+<td>LAF.25</td>
+<td>Timespan Begin of the Begin</td>
+<td>Date</td>
+<td>This field is used to record the earliest possible start date for the timespan of the documented event.</td>
+<td>-&gt;p4-&gt;E52[22_1]-&gt;p82a-&gt;xsl:date</td>
+</tr>
+<tr>
+<td>LAF.26</td>
+<td>Timespan End of the End</td>
+<td>Date</td>
+<td>This field is used to record the latest possible end date for the timespan of the documented event.</td>
+<td>-&gt;p4-&gt;E52[22_1]-&gt;p82b-&gt;xsl:date</td>
+</tr>
+<tr>
+<td>LAF.46</td>
+<td>Timespan Label</td>
+<td>String</td>
+<td>This field is used to record the string value of the machine readable label used for displaying the instance of timespan of the documented event.</td>
+<td>-&gt;p4-&gt;E52[22_1]-&gt;rdfs:label-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.47</td>
+<td>Timespan Statement</td>
+<td>Collection [Statement]</td>
+<td>This field is used to link to a statement which describes the timespan of the documented event.</td>
+<td>-&gt;p4-&gt;E52[22_1]-&gt;p67i-&gt;E33[47_1]</td>
+</tr>
+<tr>
+<td>LAF.48</td>
+<td>Timespan Type</td>
+<td>Concept</td>
+<td>This field is used to record the formal type of the timespan of the documented event.</td>
+<td>-&gt;p4-&gt;E52[22_1]-&gt;p2-&gt;E55[48_1]</td>
+</tr>
+<tr>
+<td>LAF.49</td>
+<td>Timespan Name</td>
+<td>Collection [Name]</td>
+<td>This field is used to link to a name attributed to the timespan of the documented event.</td>
+<td>-&gt;p4-&gt;E52[22_1]-&gt;p1-&gt;E33_E41[49_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-collection-timespan-ontology-graph">- Collection Timespan <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/tim_col.png" /></p>
+<h3 id="-collection-timespan-rdf">- Collection Timespan <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://pma.us/models/person/E5&gt; a crm:E5_Event ;
+    crm:P4_has_time-span &lt;https://linked.art/example/time_span/22_1&gt; .
+
+&lt;https://linked.art/example/conceptual_object/47_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/conceptual_object/49_1&gt; a crm:E33_E41_Linguistic_Appellation .
+
+&lt;https://linked.art/example/time_span/22_1&gt; a crm:E52_Time-Span ;
+    rdfs:label &quot;timespan_label_value&quot; ;
+    crm:P191_had_duration &lt;https://linked.art/example/time_span/22_2&gt; ;
+    crm:P1_is_identified_by &lt;https://linked.art/example/conceptual_object/49_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/48_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/conceptual_object/47_1&gt; ;
+    crm:P81a_end_of_the_begin &quot;2000-01-01T09:00:00&quot; ;
+    crm:P81b_begin_of_the_end &quot;2000-01-01T09:00:00&quot; ;
+    crm:P82a_begin_of_the_begin &quot;2000-01-01T09:00:00&quot; ;
+    crm:P82b_end_of_the_end &quot;2000-01-01T09:00:00&quot; .
+
+&lt;https://linked.art/example/time_span/22_2&gt; a crm:E54_Dimension .
+
+&lt;https://linked.art/example/type/48_1&gt; a crm:E55_Type .
+
+
+
+
+</code></pre>
+<h3 id="-collection-timespan-json-ld">- Collection Timespan <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/49_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;timespan_label_value&quot;,
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/48_1&quot;
+      ],
+      &quot;crm:P81a_end_of_the_begin&quot;: &quot;2000-01-01T09:00:00&quot;,
+      &quot;crm:P81b_begin_of_the_end&quot;: &quot;2000-01-01T09:00:00&quot;,
+      &quot;crm:P82a_begin_of_the_begin&quot;: &quot;2000-01-01T09:00:00&quot;,
+      &quot;crm:P82b_end_of_the_end&quot;: &quot;2000-01-01T09:00:00&quot;,
+      &quot;duration&quot;: &quot;https://linked.art/example/time_span/22_2&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/time_span/22_1&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/49_1&quot;
+      ],
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/47_1&quot;
+      ],
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/time_span/22_2&quot;,
+      &quot;type&quot;: &quot;Dimension&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/47_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://pma.us/models/person/E5&quot;,
+      &quot;timespan&quot;: &quot;https://linked.art/example/time_span/22_1&quot;,
+      &quot;type&quot;: &quot;Event&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/48_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="collection-creation">Collection <strong>Creation</strong></h2>
+<table>
+<thead>
+<tr>
+<th>Field ID</th>
+<th>Name</th>
+<th>Data Type</th>
+<th>Description</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.71</td>
+<td>Creation Location</td>
+<td>Reference Model [Place]</td>
+<td>This field is used to link the documented entity creation activity to a location at which it was carried out.</td>
+<td>-&gt;P94i-&gt;E65[71_1]-&gt;P7-&gt;E53[71_2]</td>
+</tr>
+<tr>
+<td>LAF.84</td>
+<td>Creation During</td>
+<td>Reference Model [Period]</td>
+<td>This field is used to link the documented entity creation activity to the period during which it occurred.</td>
+<td>-&gt;P94i-&gt;E65[71_1]-&gt;P117-&gt;E4[84_1]</td>
+</tr>
+<tr>
+<td>LAF.85</td>
+<td>Creation Source</td>
+<td>Reference Model [Textual Work]</td>
+<td>This field is used to link the documented entity creation activity to a textual source which documents the creation itself.</td>
+<td>-&gt;P94i-&gt;E65[71_1]-&gt;P67i-&gt;E33[85_1]</td>
+</tr>
+<tr>
+<td>LAF.86</td>
+<td>Creation Carried Out By</td>
+<td>Reference Model [Person/Group]</td>
+<td>This field is used to link the documented entity creation activity to an actor responsible for carrying it out.</td>
+<td>-&gt;P94i-&gt;E65[71_1]-&gt;P14-&gt;E39[86_1]</td>
+</tr>
+<tr>
+<td>LAF.87</td>
+<td>Creation Influence</td>
+<td>Reference Model [Artwork/Textual Work/Person/Group/Place/Period]</td>
+<td>This field is used to link the documented entity creation activity to any entity which had a substantial influence on that activity.</td>
+<td>-&gt;P94i-&gt;E65[71_1]-&gt;P15-&gt;E1[87_1]</td>
+</tr>
+<tr>
+<td>LAF.88</td>
+<td>Creation Name</td>
+<td>Collection [Name]</td>
+<td>This field is used to link the documented entity creation activity to a name that has been attributed to it.</td>
+<td>-&gt;P94i-&gt;E65[71_1]-&gt;P1-&gt;E33_E41[88_1]</td>
+</tr>
+<tr>
+<td>LAF.89</td>
+<td>Creation Used Object</td>
+<td>Concept</td>
+<td>This field is used to link the documented entity creation activity to an instance of physical object used in the exercise of this activity in a manner consequential to its outcome.</td>
+<td>-&gt;P94i-&gt;E65[71_1]-&gt;P16-&gt;E22[89_1]</td>
+</tr>
+<tr>
+<td>LAF.90</td>
+<td>Creation Time</td>
+<td>Collection [Timespan]</td>
+<td>This field is used to link the documented entity creation activity to an instance of time-span recording the temporal extent of the activity.</td>
+<td>-&gt;P94i-&gt;E65[71_1]-&gt;P4-&gt;E52[90_1]</td>
+</tr>
+<tr>
+<td>LAF.91</td>
+<td>Creation Type</td>
+<td>Concept</td>
+<td>This field is used to record the formal type of the documented entity creation activity.</td>
+<td>-&gt;P94i-&gt;E65[71_1]-&gt;P2-&gt;E55[91_1]</td>
+</tr>
+<tr>
+<td>LAF.92</td>
+<td>Creation Label</td>
+<td>String</td>
+<td>This field is used to record the string value of the machine readable label used for the documented entity creation activity.</td>
+<td>-&gt;P94i-&gt;E65[71_1]-&gt;rdfs:label-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.93</td>
+<td>Creation Technique</td>
+<td>Concept</td>
+<td>This field is used to indicate a kind of technique used in the execution of the documented entity creation activity.</td>
+<td>-&gt;P94i-&gt;E65[71_1]-&gt;P32-&gt;E55[93_1]</td>
+</tr>
+<tr>
+<td>LAF.94</td>
+<td>Creation Identifier</td>
+<td>Collection  [Identifier]</td>
+<td>This field is used to link the documented entity creation activity to an identifier that has been attributed to it.</td>
+<td>-&gt;P94i-&gt;E65[71_1]-&gt;P1-&gt;E42[94_1]</td>
+</tr>
+<tr>
+<td>LAF.95</td>
+<td>Creation Statement</td>
+<td>Collection [Statement]</td>
+<td>This field is used to link the documented entity creation activity to a statement that describes it.</td>
+<td>-&gt;P94i-&gt;E65[71_1]-&gt;P67i-&gt;E33[95_1]</td>
+</tr>
+<tr>
+<td>LAF.96</td>
+<td>Creation Caused By</td>
+<td>Concept</td>
+<td>This field is used to link the documented entity creation activity to another event which was the causal reason behind its coming to be.</td>
+<td>-&gt;P94i-&gt;E65[71_1]-&gt;O13i-&gt;E5[96_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-collection-creation-ontology-graph">- Collection Creation <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/cre_col.png" /></p>
+<h3 id="-collection-creation-rdf">- Collection Creation <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://pma.us/models/person/E89&gt; a crm:E89_Propositional_Object ;
+    crm:P94i_was_created_by &lt;https://linked.art/example/event/71_1&gt; .
+
+&lt;https://linked.art/example/actor/86_1&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/conceptual_object/85_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/conceptual_object/95_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/event/71_1&gt; a crm:E65_Creation ;
+    rdfs:label &quot;Curation_label_value&quot; ;
+    crm:O13i_is_trigerred_by &lt;https://linked.art/example/event/96_1&gt; ;
+    crm:P117_occurs_during &lt;https://linked.art/example/event/84_1&gt; ;
+    crm:P14_carried_out_by &lt;https://linked.art/example/actor/86_1&gt; ;
+    crm:P15_was_influenced_by &lt;https://linked.art/example/thing/87_1&gt; ;
+    crm:P16_used_specific_object &lt;https://linked.art/example/physical_object/89_1&gt; ;
+    crm:P1_is_identified_by &lt;https://linked.art/example/identifier/94_1&gt;,
+        &lt;https://linked.art/example/name/88_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/91_1&gt; ;
+    crm:P32_used_general_technique &lt;https://linked.art/example/type/93_1&gt; ;
+    crm:P4_has_time-span &lt;https://linked.art/example/time_span/90_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/conceptual_object/85_1&gt;,
+        &lt;https://linked.art/example/conceptual_object/95_1&gt; ;
+    crm:P7_took_place_at &lt;https://linked.art/example/place/71_2&gt; .
+
+&lt;https://linked.art/example/event/84_1&gt; a crm:E4_Period .
+
+&lt;https://linked.art/example/event/96_1&gt; a crm:E5_Event .
+
+&lt;https://linked.art/example/identifier/94_1&gt; a crm:E42_Identifier .
+
+&lt;https://linked.art/example/name/88_1&gt; a crm:E33_E41_Linguistic_Appellation .
+
+&lt;https://linked.art/example/physical_object/89_1&gt; a crm:E22_Human-Made_Object .
+
+&lt;https://linked.art/example/place/71_2&gt; a crm:E53_Place .
+
+&lt;https://linked.art/example/thing/87_1&gt; a crm:E1_CRM_Entity .
+
+&lt;https://linked.art/example/time_span/90_1&gt; a crm:E52_Time-Span .
+
+&lt;https://linked.art/example/type/91_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/93_1&gt; a crm:E55_Type .
+
+
+
+</code></pre>
+<h3 id="-collection-creation-json-ld">- Collection Creation <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/91_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/event/96_1&quot;,
+      &quot;type&quot;: &quot;Event&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/85_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/time_span/90_1&quot;,
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/event/84_1&quot;,
+      &quot;type&quot;: &quot;Period&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/thing/87_1&quot;,
+      &quot;type&quot;: &quot;CRMEntity&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;Curation_label_value&quot;,
+      &quot;carried_out_by&quot;: [
+        &quot;https://linked.art/example/actor/86_1&quot;
+      ],
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/91_1&quot;
+      ],
+      &quot;crm:O13i_is_trigerred_by&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/event/96_1&quot;
+      },
+      &quot;crm:P117_occurs_during&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/event/84_1&quot;
+      },
+      &quot;id&quot;: &quot;https://linked.art/example/event/71_1&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://linked.art/example/name/88_1&quot;,
+        &quot;https://linked.art/example/identifier/94_1&quot;
+      ],
+      &quot;influenced_by&quot;: [
+        &quot;https://linked.art/example/thing/87_1&quot;
+      ],
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/95_1&quot;,
+        &quot;https://linked.art/example/conceptual_object/85_1&quot;
+      ],
+      &quot;technique&quot;: [
+        &quot;https://linked.art/example/type/93_1&quot;
+      ],
+      &quot;timespan&quot;: &quot;https://linked.art/example/time_span/90_1&quot;,
+      &quot;took_place_at&quot;: [
+        &quot;https://linked.art/example/place/71_2&quot;
+      ],
+      &quot;type&quot;: &quot;Creation&quot;,
+      &quot;used_specific_object&quot;: [
+        &quot;https://linked.art/example/physical_object/89_1&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/physical_object/89_1&quot;,
+      &quot;type&quot;: &quot;HumanMadeObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/95_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;created_by&quot;: &quot;https://linked.art/example/event/71_1&quot;,
+      &quot;id&quot;: &quot;https://pma.us/models/person/E89&quot;,
+      &quot;type&quot;: &quot;PropositionalObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/93_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/86_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/place/71_2&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/identifier/94_1&quot;,
+      &quot;type&quot;: &quot;Identifier&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/name/88_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="collection-data-assignment">Collection <strong>Data Assignment</strong></h2>
+<table>
+<thead>
+<tr>
+<th>Field ID</th>
+<th>Name</th>
+<th>Data Type</th>
+<th>Description</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.429</td>
+<td>Data Assigner</td>
+<td>Reference Model [Person/Group]</td>
+<td>This field is used to indicate the actor responsible for the event of data assignment.</td>
+<td>-&gt;p140i-&gt;E13[429_1]-&gt;P14-&gt;E39[429_2]</td>
+</tr>
+<tr>
+<td>LAF.430</td>
+<td>Type of Data Assignment</td>
+<td>Concept</td>
+<td>This field is used to indicate the type of the event of data assignment.</td>
+<td>-&gt;p140i-&gt;E13[429_1]-&gt;P2-&gt;E55[430_1]</td>
+</tr>
+<tr>
+<td>LAF.431</td>
+<td>Data Assignment Label</td>
+<td>String</td>
+<td>This field is used to indicate the machine readable label for the event of data assignment.</td>
+<td>-&gt;p140i-&gt;E13[429_1]-&gt;rdfs:label-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.432</td>
+<td>Name of Data Assignment</td>
+<td>Collection [Name]</td>
+<td>This field is used to indicate the name given to the event of data assignment.</td>
+<td>-&gt;p140i-&gt;E13[429_1]-&gt;p1-&gt;E41[432_1]</td>
+</tr>
+<tr>
+<td>LAF.552</td>
+<td>Statement about Data Assignment</td>
+<td>Collection [Statement]</td>
+<td>This field is used to document free text statements about the event of data assignment.</td>
+<td>-&gt;p140i-&gt;E13[429_1]-&gt;p67i-&gt;E33[552_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-collection-data-assignment-ontology-graph">- Collection Data Assignment <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/dat_col.png" /></p>
+<h3 id="-collection-data-assignment-rdf">- Collection Data Assignment <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://pma.us/models/person/E1&gt; a crm:E1_CRM_Entity ;
+    crm:P141i_was_assigned_by &lt;https://linked.art/example/event/429_1&gt; .
+
+&lt;https://linked.art/example/actor/430_1&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/conceptual_object/552_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/event/429_1&gt; a crm:E13_Attribute_Assignment ;
+    rdfs:label &quot;Value here&quot; ;
+    crm:P14_carried_out_by &lt;https://linked.art/example/actor/430_1&gt; ;
+    crm:P1_is_identified_by &lt;https://linked.art/example/name/432_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/431_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/conceptual_object/552_1&gt; .
+
+&lt;https://linked.art/example/name/432_1&gt; a crm:E41_Appellation .
+
+&lt;https://linked.art/example/type/431_1&gt; a crm:E55_Type .
+
+
+
+</code></pre>
+<h3 id="-collection-data-assignment-json-ld">- Collection Data Assignment <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;assigned_by&quot;: [
+        &quot;https://linked.art/example/event/429_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://pma.us/models/person/E1&quot;,
+      &quot;type&quot;: &quot;CRMEntity&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/552_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/431_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/name/432_1&quot;,
+      &quot;type&quot;: &quot;Appellation&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;Value here&quot;,
+      &quot;carried_out_by&quot;: [
+        &quot;https://linked.art/example/actor/430_1&quot;
+      ],
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/431_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/event/429_1&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://linked.art/example/name/432_1&quot;
+      ],
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/552_1&quot;
+      ],
+      &quot;type&quot;: &quot;AttributeAssignment&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/430_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    }
+  ]
+}
+
+
+</code></pre>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav">
+      <a href="../image/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../image/" class="btn btn-xs btn-link">
+        Digital Object
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
